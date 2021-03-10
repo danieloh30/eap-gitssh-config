@@ -36,7 +36,7 @@ VQkrBi+DGhCBZucrUmyOjEnXr5vVXUFNWNjYHGWSeMqYzXUbkAAACBAND4iEMtllkzT+NS
 IOBHapelHdbJ6A2lH6hqAXKRkjWWDjlWxHk1r57YME/Hsl3sst6ZNdmNgJSGgBtFrFr6Ap
 mU2Z4AztZTTSvq+xAAAAHGRhbmllbG9oQERhbmllbHMtTWFjQm9vay1Qcm8BAgMEBQY=
 -----END OPENSSH PRIVATE KEY-----">
-                    <clear-password password="secret"/>
+                    <clear-password password=""/>
                  </openssh-private-key>
               </key-pair>
            </credentials>
