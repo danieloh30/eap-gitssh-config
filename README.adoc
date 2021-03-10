@@ -8,5 +8,5 @@ If necessary, you can generate SSH keys by using one of the following methods:
 
 * The elytron-tool.sh script
 * The OpenSSH command line
-* 
-For information about connecting to a remote Git SSH repository, see Using a remote Git SSH repository: https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/7.4.Beta/html-single/configuration_guide/#using-remote-git-ssh-repository_default
+
+For information about connecting to a remote Git SSH repository, see https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/7.4.Beta/html-single/configuration_guide/#using-remote-git-ssh-repository_default[Using a remote Git SSH repository^]
