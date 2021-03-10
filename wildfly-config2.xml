@@ -1,0 +1,46 @@
+<configuration>
+  <authentication-client xmlns="urn:elytron:client:1.6">
+
+     <authentication-rules>
+        <rule use-configuration="example"/>
+     </authentication-rules>
+
+     <authentication-configurations>
+        <configuration name="example">
+           <credentials>
+              <key-pair>
+                 <openssh-private-key pem="-----BEGIN OPENSSH PRIVATE KEY-----
+b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAABFwAAAAdzc2gtcn
+NhAAAAAwEAAQAAAQEAwTlObhLD/ax8DfyYfA8d4p82DsfucN3MaOQs7+fFc4mRQgEWmspk
+CcuZ41pMLAVqgf07B132fSc1nlTCW0IKuzWrI8ltYwsNE9jp7dCp88gEn4I8WMXDsfLqtK
+Eh2cs4n0A+2pzcdK7UZyarUbapagkvSdQwuHT/WLtGA370HI6blTAwvAuJnsRGi+N7nAR3
+tCeMadt7vsegUgPCDJlh/QIrmTbOI/TQaCdY8qIcPnko5ji9lV1rp+mJn5e1wgWEENL6wq
+rtAAqk3zI9y5rDEx+hnvepi3c5ZN643WDoS0e+M+OT6V17rY39P20LDMR8ohy1VZTi8uAM
+Huft+wr36QAAA9h1ykyFdcpMhQAAAAdzc2gtcnNhAAABAQDBOU5uEsP9rHwN/Jh8Dx3inz
+YOx+5w3cxo5Czv58VziZFCARaaymQJy5njWkwsBWqB/TsHXfZ9JzWeVMJbQgq7NasjyW1j
+Cw0T2Ont0KnzyASfgjxYxcOx8uq0oSHZyzifQD7anNx0rtRnJqtRtqlqCS9J1DC4dP9Yu0
+YDfvQcjpuVMDC8C4mexEaL43ucBHe0J4xp23u+x6BSA8IMmWH9AiuZNs4j9NBoJ1jyohw+
+eSjmOL2VXWun6Ymfl7XCBYQQ0vrCqu0ACqTfMj3LmsMTH6Ge96mLdzlk3rjdYOhLR74z45
+PpXXutjf0/bQsMxHyiHLVVlOLy4Awe5+37CvfpAAAAAwEAAQAAAQEAoUdh7YKAUMadrVb/
+N92uRjA6ANBkd5TKP2rlD0HXj35t3jfmVEFGit6Ejj4agkvrAKELmjSVvxTxLjz1FRLkvi
+ontPE1+ouI2N4fM78NfEuhgDpGgJpho7Bss2QjSxTTKCmJzRNM95/N7mNacBQVCEquS+Nu
+3yfY0olOATEANKxns7bU47/oaxbOCvEEJjNzw02ktAAWw0Mq4Z1rdfSiq+C/0w13AMiu8P
+RgqUHk/neY6V/GBpR+RLH6RAabm/z4GhXreEjXgSX2gKXNvJjx0y8oCDQCItQeDzS/SciL
+GVEQ2y/v5k3OQe6pIHRbcE8gjTA8Feg1ZzHZI0tc75cLAQAAAIAOyBffO1ObqxFBOxlew0
+zNGI/rXHawSUGjKOdQdPArziuzCoKmpaNLBALZ492ubDw3moG2wDz3teUk9a1tyyKgVdLx
+fsGL1zTGg4dVNshVhGmmf4jI4jVhXKGv7ULZyfEh9MFGIoKhBu6MsWARqzAV4VcK3Hnc1l
+mc0vZdSWC9+wAAAIEA7LWKi3G89/wdMhpxX0AR8TUwY+DAu3yi2E5BFTK1plq5hv9es0GK
+0rc6eUL6Yc3eCo3yDXxJTjeN1G+61FhvBrGLduZuIQSVi+lOmNSwOAF4qolu5L7Nkg6m4n
+VQkrBi+DGhCBZucrUmyOjEnXr5vVXUFNWNjYHGWSeMqYzXUbkAAACBAND4iEMtllkzT+NS
+9xvF7ieOUX1iRFen/1UB0lHbqHuB65bVZ2dCX0je6ccIvTxmKFn9hS+kcZGUQuPy0s09Qd
+IOBHapelHdbJ6A2lH6hqAXKRkjWWDjlWxHk1r57YME/Hsl3sst6ZNdmNgJSGgBtFrFr6Ap
+mU2Z4AztZTTSvq+xAAAAHGRhbmllbG9oQERhbmllbHMtTWFjQm9vay1Qcm8BAgMEBQY=
+-----END OPENSSH PRIVATE KEY-----">
+                    <clear-password password="secret"/>
+                 </openssh-private-key>
+              </key-pair>
+           </credentials>
+        </configuration>
+     </authentication-configurations>
+  </authentication-client>
+</configuration>
