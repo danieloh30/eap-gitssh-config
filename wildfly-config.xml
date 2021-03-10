@@ -1,0 +1,29 @@
+<configuration>
+  <authentication-client xmlns="urn:elytron:client:1.6">
+
+     <credential-stores>
+        <credential-store name="store1">
+           <protection-parameter-credentials>
+              <clear-password password="Elytron"/>
+           </protection-parameter-credentials>
+           <attributes>
+              <attribute name="keyStoreType" value="JCEKS"/>
+                <attribute name="location" value="/Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/cs_example.cs"/>
+           </attributes>
+        </credential-store>
+     </credential-stores>
+
+     <authentication-rules>
+        <rule use-configuration="example-config"/>
+     </authentication-rules>
+
+     <authentication-configurations>
+        <configuration name="example-config">
+           <credentials>
+              <credential-store-reference store="store1" alias="example" clear-text="Elytron"/>
+           </credentials>
+        </configuration>
+     </authentication-configurations>
+
+  </authentication-client>
+</configuration>
