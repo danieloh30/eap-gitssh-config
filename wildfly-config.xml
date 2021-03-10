@@ -8,7 +8,7 @@
            </protection-parameter-credentials>
            <attributes>
               <attribute name="keyStoreType" value="JCEKS"/>
-                <attribute name="location" value="/Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/cs_example.cs"/>
+                <attribute name="location" value="/opt/eap/standalone/configuration/cs_example.cs"/>
            </attributes>
         </credential-store>
      </credential-stores>
