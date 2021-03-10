@@ -21,6 +21,7 @@
         <configuration name="example-config">
            <credentials>
               <credential-store-reference store="store1" alias="example" clear-text="Elytron"/>
+              <ssh-credential ssh-directory="/home/jboss/.ssh" known-hosts-file="known_hosts"/>
            </credentials>
         </configuration>
      </authentication-configurations>
