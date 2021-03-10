@@ -1,0 +1,1488 @@
+2021-03-09 14:52:14,426 INFO  [org.jboss.modules] (main) JBoss Modules version 1.11.0.Final-redhat-00001
+2021-03-09 14:52:15,287 ERROR [org.jboss.as.server] (main) WFLYSRV0271: Git error: WFLYSRV0268: Failed to pull the repository https://github.com/danieloh30/eap-gitssh-demo.git: java.lang.RuntimeException: WFLYSRV0268: Failed to pull the repository https://github.com/danieloh30/eap-gitssh-demo.git
+	at org.jboss.as.server@14.0.1.Final-redhat-00001//org.jboss.as.server.controller.git.GitRepository.<init>(GitRepository.java:113)
+	at org.jboss.as.server@14.0.1.Final-redhat-00001//org.jboss.as.server.ServerEnvironment.<init>(ServerEnvironment.java:528)
+	at org.jboss.as.server@14.0.1.Final-redhat-00001//org.jboss.as.server.Main.determineEnvironment(Main.java:388)
+	at org.jboss.as.server@14.0.1.Final-redhat-00001//org.jboss.as.server.Main.main(Main.java:96)
+	at org.jboss.modules.Module.run(Module.java:353)
+	at org.jboss.modules.Module.run(Module.java:321)
+	at org.jboss.modules.Main.main(Main.java:617)
+Caused by: org.eclipse.jgit.api.errors.InvalidConfigurationException: No value for key remote.origin.url found in configuration
+	at org.eclipse.jgit@5.9.0.202009080501-r-redhat-00001//org.eclipse.jgit.api.PullCommand.call(PullCommand.java:249)
+	at org.jboss.as.server@14.0.1.Final-redhat-00001//org.jboss.as.server.controller.git.GitRepository.<init>(GitRepository.java:99)
+	... 6 more
+
+2021-03-09 14:52:15,289 FATAL [org.jboss.as.server] (main) WFLYSRV0239: Aborting with exit code 1
+2021-03-09 15:11:04,433 INFO  [org.jboss.modules] (main) JBoss Modules version 1.11.0.Final-redhat-00001
+2021-03-09 15:11:05,175 INFO  [org.wildfly.security] (main) ELY00001: WildFly Elytron version 1.14.1.Final-redhat-00001
+2021-03-09 15:11:05,675 INFO  [org.apache.sshd.common.io.DefaultIoServiceFactoryFactory] (main) No detected/configured IoServiceFactoryFactory using Nio2ServiceFactoryFactory
+2021-03-09 15:11:06,626 INFO  [org.jboss.as.server] (main) WFLYSRV0278: The configuration history is managed through Git
+2021-03-09 15:11:06,642 INFO  [org.jboss.msc] (main) JBoss MSC version 1.4.12.Final-redhat-00001
+2021-03-09 15:11:06,649 INFO  [org.jboss.threads] (main) JBoss Threads version 2.4.0.Final-redhat-00001
+2021-03-09 15:11:06,752 INFO  [org.jboss.as] (MSC service thread 1-2) WFLYSRV0049: JBoss EAP 7.4.0.Beta (WildFly Core 14.0.1.Final-redhat-00001) starting
+2021-03-09 15:11:06,754 DEBUG [org.jboss.as.config] (MSC service thread 1-2) Configured system properties:
+	[Standalone] = 
+	file.encoding = UTF-8
+	file.separator = /
+	ftp.nonProxyHosts = local|*.local|169.254/16|*.169.254/16|lx.astxsvc.com|*.lx.astxsvc.com|localhost|*.localhost|127.0.0.1:21300|*.127.0.0.1:21300
+	http.nonProxyHosts = local|*.local|169.254/16|*.169.254/16|lx.astxsvc.com|*.lx.astxsvc.com|localhost|*.localhost|127.0.0.1:21300|*.127.0.0.1:21300
+	java.awt.headless = true
+	java.class.path = /Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/jboss-modules.jar
+	java.class.version = 58.0
+	java.home = /Library/Java/JavaVirtualMachines/openjdk-14.0.1.jdk/Contents/Home
+	java.io.tmpdir = /var/folders/3g/g5jgkj0553s5dkwc3zw_p7_m0000gn/T/
+	java.library.path = /Users/danieloh/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+	java.net.preferIPv4Stack = true
+	java.runtime.name = OpenJDK Runtime Environment
+	java.runtime.version = 14.0.1+7
+	java.specification.name = Java Platform API Specification
+	java.specification.vendor = Oracle Corporation
+	java.specification.version = 14
+	java.util.logging.manager = org.jboss.logmanager.LogManager
+	java.vendor = Oracle Corporation
+	java.vendor.url = https://java.oracle.com/
+	java.vendor.url.bug = https://bugreport.java.com/bugreport/
+	java.version = 14.0.1
+	java.version.date = 2020-04-14
+	java.vm.compressedOopsMode = Zero based
+	java.vm.info = mixed mode, sharing
+	java.vm.name = OpenJDK 64-Bit Server VM
+	java.vm.specification.name = Java Virtual Machine Specification
+	java.vm.specification.vendor = Oracle Corporation
+	java.vm.specification.version = 14
+	java.vm.vendor = Oracle Corporation
+	java.vm.version = 14.0.1+7
+	javax.management.builder.initial = org.jboss.as.jmx.PluggableMBeanServerBuilder
+	jboss.home.dir = /Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta
+	jboss.host.name = daniels-macbook-pro
+	jboss.modules.dir = /Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/modules
+	jboss.modules.system.pkgs = org.jboss.byteman
+	jboss.node.name = daniels-macbook-pro
+	jboss.qualified.host.name = daniels-macbook-pro
+	jboss.server.base.dir = /Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/standalone
+	jboss.server.config.dir = /Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/standalone/configuration
+	jboss.server.data.dir = /Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/standalone/data
+	jboss.server.deploy.dir = /Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/standalone/data/content
+	jboss.server.log.dir = /Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/standalone/log
+	jboss.server.name = daniels-macbook-pro
+	jboss.server.persist.config = true
+	jboss.server.temp.dir = /Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/standalone/tmp
+	jdk.debug = release
+	line.separator = 
+
+	logging.configuration = file:/Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/standalone/configuration/logging.properties
+	module.path = /Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/modules
+	org.jboss.boot.log.file = /Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/standalone/log/server.log
+	org.jboss.resolver.warning = true
+	os.arch = x86_64
+	os.name = Mac OS X
+	os.version = 10.16
+	path.separator = :
+	socksNonProxyHosts = local|*.local|169.254/16|*.169.254/16|lx.astxsvc.com|*.lx.astxsvc.com|localhost|*.localhost|127.0.0.1:21300|*.127.0.0.1:21300
+	sun.arch.data.model = 64
+	sun.boot.library.path = /Library/Java/JavaVirtualMachines/openjdk-14.0.1.jdk/Contents/Home/lib
+	sun.cpu.endian = little
+	sun.io.unicode.encoding = UnicodeBig
+	sun.java.command = /Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/jboss-modules.jar -mp /Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/modules org.jboss.as.standalone -Djboss.home.dir=/Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta -Djboss.server.base.dir=/Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/standalone --git-repo=git@github.com:danieloh30/eap-gitssh-demo.git --git-branch=main --git-auth=file:///Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/wildfly-config.xml
+	sun.java.launcher = SUN_STANDARD
+	sun.jnu.encoding = UTF-8
+	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+	user.country = US
+	user.dir = /Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta
+	user.home = /Users/danieloh
+	user.language = en
+	user.name = danieloh
+	user.timezone = America/New_York
+2021-03-09 15:11:06,756 DEBUG [org.jboss.as.config] (MSC service thread 1-2) VM Arguments: -D[Standalone] -Xlog:gc*:file=/Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/standalone/log/gc.log:time,uptimemillis:filecount=5,filesize=3M -Xms1303m -Xmx1303m -XX:MetaspaceSize=96M -XX:MaxMetaspaceSize=256m -Djava.net.preferIPv4Stack=true -Djboss.modules.system.pkgs=org.jboss.byteman -Djava.awt.headless=true --add-exports=java.base/sun.nio.ch=ALL-UNNAMED --add-exports=jdk.unsupported/sun.misc=ALL-UNNAMED --add-exports=jdk.unsupported/sun.reflect=ALL-UNNAMED -Dorg.jboss.boot.log.file=/Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/standalone/log/server.log -Dlogging.configuration=file:/Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/standalone/configuration/logging.properties 
+2021-03-09 15:11:07,768 INFO  [org.jboss.as.controller.management-deprecated] (Controller Boot Thread) WFLYCTL0028: Attribute 'security-realm' in the resource at address '/core-service=management/management-interface=http-interface' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+2021-03-09 15:11:07,787 INFO  [org.jboss.as.controller.management-deprecated] (ServerService Thread Pool -- 10) WFLYCTL0028: Attribute 'security-realm' in the resource at address '/subsystem=undertow/server=default-server/https-listener=https' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+2021-03-09 15:11:07,841 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0039: Creating http management service using socket-binding (management-http)
+2021-03-09 15:11:07,859 INFO  [org.xnio] (MSC service thread 1-3) XNIO version 3.8.4.Final-redhat-00001
+2021-03-09 15:11:07,866 INFO  [org.xnio.nio] (MSC service thread 1-3) XNIO NIO Implementation Version 3.8.4.Final-redhat-00001
+2021-03-09 15:11:07,887 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 50) WFLYCLINF0001: Activating Infinispan subsystem.
+2021-03-09 15:11:07,892 INFO  [org.wildfly.extension.health] (ServerService Thread Pool -- 49) WFLYHEALTH0001: Activating Base Health Subsystem
+2021-03-09 15:11:07,894 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 51) WFLYIO001: Worker 'default' has auto-configured to 24 IO threads with 192 max task threads based on your 12 available processors
+2021-03-09 15:11:07,896 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 68) WFLYTX0013: The node-identifier attribute on the /subsystem=transactions is set to the default value. This is a danger for environments running multiple servers. Please make sure the attribute value is unique.
+2021-03-09 15:11:07,902 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 60) WFLYNAM0001: Activating Naming Subsystem
+2021-03-09 15:11:07,906 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 66) WFLYSEC0002: Activating Security Subsystem
+2021-03-09 15:11:07,910 INFO  [org.jboss.as.jaxrs] (ServerService Thread Pool -- 52) WFLYRS0016: RESTEasy version 3.14.0.Final-redhat-00001
+2021-03-09 15:11:07,909 INFO  [org.jboss.as.jsf] (ServerService Thread Pool -- 57) WFLYJSF0007: Activated the following JSF Implementations: [main]
+2021-03-09 15:11:07,912 INFO  [org.jboss.as.security] (MSC service thread 1-1) WFLYSEC0001: Current PicketBox version=5.0.3.Final-redhat-00007
+2021-03-09 15:11:07,915 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 70) WFLYWS0002: Activating WebServices Extension
+2021-03-09 15:11:07,918 INFO  [org.wildfly.extension.metrics] (ServerService Thread Pool -- 59) WFLYMETRICS0001: Activating Base Metrics Subsystem
+2021-03-09 15:11:07,922 INFO  [org.jboss.as.connector] (MSC service thread 1-5) WFLYJCA0009: Starting JCA Subsystem (WildFly/IronJacamar 1.4.25.Final-redhat-00001)
+2021-03-09 15:11:07,951 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0003: Undertow 2.2.3.SP1-redhat-00001 starting
+2021-03-09 15:11:07,955 INFO  [org.jboss.remoting] (MSC service thread 1-8) JBoss Remoting version 5.0.20.Final-redhat-00001
+2021-03-09 15:11:07,965 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 41) WFLYJCA0004: Deploying JDBC-compliant driver class org.h2.Driver (version 1.4)
+2021-03-09 15:11:07,977 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-6) WFLYJCA0018: Started Driver service with driver-name = h2
+2021-03-09 15:11:07,980 INFO  [org.jboss.as.naming] (MSC service thread 1-7) WFLYNAM0003: Starting Naming Service
+2021-03-09 15:11:07,986 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-8) WFLYMAIL0001: Bound mail session [java:jboss/mail/Default]
+2021-03-09 15:11:07,998 WARN  [org.wildfly.extension.elytron] (MSC service thread 1-6) WFLYELY00023: KeyStore file '/Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/standalone/configuration/application.keystore' does not exist. Used blank.
+2021-03-09 15:11:08,047 WARN  [org.wildfly.extension.elytron] (MSC service thread 1-7) WFLYELY01084: KeyStore /Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/standalone/configuration/application.keystore not found, it will be auto generated on first use with a self-signed certificate for host localhost
+2021-03-09 15:11:08,059 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 69) WFLYUT0014: Creating file handler for path '/Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/welcome-content' with options [directory-listing: 'false', follow-symlink: 'false', case-sensitive: 'true', safe-symlink-paths: '[]']
+2021-03-09 15:11:08,069 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) WFLYUT0012: Started server default-server.
+2021-03-09 15:11:08,073 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) WFLYUT0018: Host default-host starting
+2021-03-09 15:11:08,076 INFO  [org.jboss.as.ejb3] (MSC service thread 1-7) WFLYEJB0481: Strict pool slsb-strict-max-pool is using a max instance size of 192 (per class), which is derived from thread worker pool sizing.
+2021-03-09 15:11:08,076 INFO  [org.jboss.as.ejb3] (MSC service thread 1-5) WFLYEJB0482: Strict pool mdb-strict-max-pool is using a max instance size of 48 (per class), which is derived from the number of CPUs on this host.
+2021-03-09 15:11:08,140 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0006: Undertow HTTP listener default listening on 127.0.0.1:8080
+2021-03-09 15:11:08,170 INFO  [org.jboss.as.ejb3] (MSC service thread 1-7) WFLYEJB0493: EJB subsystem suspension complete
+2021-03-09 15:11:08,215 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-7) WFLYJCA0001: Bound data source [java:jboss/datasources/ExampleDS]
+2021-03-09 15:11:08,217 INFO  [org.jboss.as.patching] (MSC service thread 1-6) WFLYPAT0050: JBoss EAP cumulative patch ID is: base, one-off patches include: none
+2021-03-09 15:11:08,228 WARN  [org.jboss.as.domain.management.security] (MSC service thread 1-5) WFLYDM0111: Keystore /Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/standalone/configuration/application.keystore not found, it will be auto generated on first use with a self signed certificate for host localhost
+2021-03-09 15:11:08,232 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-4) WFLYDS0013: Started FileSystemDeploymentService for directory /Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/standalone/deployments
+2021-03-09 15:11:08,252 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) WFLYUT0006: Undertow HTTPS listener https listening on 127.0.0.1:8443
+2021-03-09 15:11:08,323 INFO  [org.jboss.ws.common.management] (MSC service thread 1-8) JBWS022052: Starting JBossWS 5.4.2.Final-redhat-00001 (Apache CXF 3.3.7.redhat-00001) 
+2021-03-09 15:11:08,398 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0212: Resuming server
+2021-03-09 15:11:08,399 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0025: JBoss EAP 7.4.0.Beta (WildFly Core 14.0.1.Final-redhat-00001) started in 4396ms - Started 316 of 555 services (344 services are lazy, passive or on-demand)
+2021-03-09 15:11:08,401 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0060: Http management interface listening on http://127.0.0.1:9990/management
+2021-03-09 15:11:08,402 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0051: Admin console listening on http://127.0.0.1:9990
+2021-03-09 15:12:08,092 INFO  [org.jboss.as.server] (Thread-6) WFLYSRV0272: Suspending server
+2021-03-09 15:12:08,093 INFO  [org.jboss.as.ejb3] (Thread-6) WFLYEJB0493: EJB subsystem suspension complete
+2021-03-09 15:12:08,094 INFO  [org.jboss.as.server] (Thread-6) WFLYSRV0220: Server shutdown has been requested via an OS signal
+2021-03-09 15:12:08,113 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-2) WFLYJCA0010: Unbound data source [java:jboss/datasources/ExampleDS]
+2021-03-09 15:12:08,114 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-7) WFLYMAIL0002: Unbound mail session [java:jboss/mail/Default]
+2021-03-09 15:12:08,114 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0019: Host default-host stopping
+2021-03-09 15:12:08,115 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0008: Undertow HTTPS listener https suspending
+2021-03-09 15:12:08,115 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0008: Undertow HTTP listener default suspending
+2021-03-09 15:12:08,116 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-6) WFLYJCA0019: Stopped Driver service with driver-name = h2
+2021-03-09 15:12:08,121 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0007: Undertow HTTPS listener https stopped, was bound to 127.0.0.1:8443
+2021-03-09 15:12:08,121 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0007: Undertow HTTP listener default stopped, was bound to 127.0.0.1:8080
+2021-03-09 15:12:08,122 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0004: Undertow 2.2.3.SP1-redhat-00001 stopping
+2021-03-09 15:12:08,129 INFO  [org.jboss.as] (MSC service thread 1-2) WFLYSRV0050: JBoss EAP 7.4.0.Beta (WildFly Core 14.0.1.Final-redhat-00001) stopped in 20ms
+2021-03-09 15:14:45,695 INFO  [org.jboss.modules] (main) JBoss Modules version 1.11.0.Final-redhat-00001
+2021-03-09 15:14:47,061 INFO  [org.jboss.as.server] (main) WFLYSRV0278: The configuration history is managed through Git
+2021-03-09 15:14:47,071 INFO  [org.jboss.msc] (main) JBoss MSC version 1.4.12.Final-redhat-00001
+2021-03-09 15:14:47,077 INFO  [org.jboss.threads] (main) JBoss Threads version 2.4.0.Final-redhat-00001
+2021-03-09 15:14:47,157 INFO  [org.jboss.as] (MSC service thread 1-2) WFLYSRV0049: JBoss EAP 7.4.0.Beta (WildFly Core 14.0.1.Final-redhat-00001) starting
+2021-03-09 15:14:47,159 DEBUG [org.jboss.as.config] (MSC service thread 1-2) Configured system properties:
+	[Standalone] = 
+	file.encoding = UTF-8
+	file.separator = /
+	ftp.nonProxyHosts = local|*.local|169.254/16|*.169.254/16|lx.astxsvc.com|*.lx.astxsvc.com|localhost|*.localhost|127.0.0.1:21300|*.127.0.0.1:21300
+	http.nonProxyHosts = local|*.local|169.254/16|*.169.254/16|lx.astxsvc.com|*.lx.astxsvc.com|localhost|*.localhost|127.0.0.1:21300|*.127.0.0.1:21300
+	java.awt.headless = true
+	java.class.path = /Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/jboss-modules.jar
+	java.class.version = 58.0
+	java.home = /Library/Java/JavaVirtualMachines/openjdk-14.0.1.jdk/Contents/Home
+	java.io.tmpdir = /var/folders/3g/g5jgkj0553s5dkwc3zw_p7_m0000gn/T/
+	java.library.path = /Users/danieloh/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+	java.net.preferIPv4Stack = true
+	java.runtime.name = OpenJDK Runtime Environment
+	java.runtime.version = 14.0.1+7
+	java.specification.name = Java Platform API Specification
+	java.specification.vendor = Oracle Corporation
+	java.specification.version = 14
+	java.util.logging.manager = org.jboss.logmanager.LogManager
+	java.vendor = Oracle Corporation
+	java.vendor.url = https://java.oracle.com/
+	java.vendor.url.bug = https://bugreport.java.com/bugreport/
+	java.version = 14.0.1
+	java.version.date = 2020-04-14
+	java.vm.compressedOopsMode = Zero based
+	java.vm.info = mixed mode, sharing
+	java.vm.name = OpenJDK 64-Bit Server VM
+	java.vm.specification.name = Java Virtual Machine Specification
+	java.vm.specification.vendor = Oracle Corporation
+	java.vm.specification.version = 14
+	java.vm.vendor = Oracle Corporation
+	java.vm.version = 14.0.1+7
+	javax.management.builder.initial = org.jboss.as.jmx.PluggableMBeanServerBuilder
+	jboss.home.dir = /Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta
+	jboss.host.name = daniels-macbook-pro
+	jboss.modules.dir = /Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/modules
+	jboss.modules.system.pkgs = org.jboss.byteman
+	jboss.node.name = daniels-macbook-pro
+	jboss.qualified.host.name = daniels-macbook-pro
+	jboss.server.base.dir = /Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/standalone
+	jboss.server.config.dir = /Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/standalone/configuration
+	jboss.server.data.dir = /Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/standalone/data
+	jboss.server.deploy.dir = /Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/standalone/data/content
+	jboss.server.log.dir = /Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/standalone/log
+	jboss.server.name = daniels-macbook-pro
+	jboss.server.persist.config = true
+	jboss.server.temp.dir = /Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/standalone/tmp
+	jdk.debug = release
+	line.separator = 
+
+	logging.configuration = file:/Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/standalone/configuration/logging.properties
+	module.path = /Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/modules
+	org.jboss.boot.log.file = /Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/standalone/log/server.log
+	org.jboss.resolver.warning = true
+	os.arch = x86_64
+	os.name = Mac OS X
+	os.version = 10.16
+	path.separator = :
+	socksNonProxyHosts = local|*.local|169.254/16|*.169.254/16|lx.astxsvc.com|*.lx.astxsvc.com|localhost|*.localhost|127.0.0.1:21300|*.127.0.0.1:21300
+	sun.arch.data.model = 64
+	sun.boot.library.path = /Library/Java/JavaVirtualMachines/openjdk-14.0.1.jdk/Contents/Home/lib
+	sun.cpu.endian = little
+	sun.io.unicode.encoding = UnicodeBig
+	sun.java.command = /Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/jboss-modules.jar -mp /Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/modules org.jboss.as.standalone -Djboss.home.dir=/Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta -Djboss.server.base.dir=/Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/standalone --git-repo=https://github.com/danieloh30/eap-gitssh-demo.git --git-branch=main
+	sun.java.launcher = SUN_STANDARD
+	sun.jnu.encoding = UTF-8
+	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+	user.country = US
+	user.dir = /Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta
+	user.home = /Users/danieloh
+	user.language = en
+	user.name = danieloh
+	user.timezone = America/New_York
+2021-03-09 15:14:47,161 DEBUG [org.jboss.as.config] (MSC service thread 1-2) VM Arguments: -D[Standalone] -Xlog:gc*:file=/Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/standalone/log/gc.log:time,uptimemillis:filecount=5,filesize=3M -Xms1303m -Xmx1303m -XX:MetaspaceSize=96M -XX:MaxMetaspaceSize=256m -Djava.net.preferIPv4Stack=true -Djboss.modules.system.pkgs=org.jboss.byteman -Djava.awt.headless=true --add-exports=java.base/sun.nio.ch=ALL-UNNAMED --add-exports=jdk.unsupported/sun.misc=ALL-UNNAMED --add-exports=jdk.unsupported/sun.reflect=ALL-UNNAMED -Dorg.jboss.boot.log.file=/Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/standalone/log/server.log -Dlogging.configuration=file:/Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/standalone/configuration/logging.properties 
+2021-03-09 15:14:47,644 INFO  [org.wildfly.security] (ServerService Thread Pool -- 17) ELY00001: WildFly Elytron version 1.14.1.Final-redhat-00001
+2021-03-09 15:14:48,053 INFO  [org.jboss.as.controller.management-deprecated] (Controller Boot Thread) WFLYCTL0028: Attribute 'security-realm' in the resource at address '/core-service=management/management-interface=http-interface' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+2021-03-09 15:14:48,071 INFO  [org.jboss.as.controller.management-deprecated] (ServerService Thread Pool -- 11) WFLYCTL0028: Attribute 'security-realm' in the resource at address '/subsystem=undertow/server=default-server/https-listener=https' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+2021-03-09 15:14:48,124 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0039: Creating http management service using socket-binding (management-http)
+2021-03-09 15:14:48,137 INFO  [org.xnio] (MSC service thread 1-2) XNIO version 3.8.4.Final-redhat-00001
+2021-03-09 15:14:48,143 INFO  [org.xnio.nio] (MSC service thread 1-2) XNIO NIO Implementation Version 3.8.4.Final-redhat-00001
+2021-03-09 15:14:48,167 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 50) WFLYCLINF0001: Activating Infinispan subsystem.
+2021-03-09 15:14:48,169 INFO  [org.wildfly.extension.health] (ServerService Thread Pool -- 49) WFLYHEALTH0001: Activating Base Health Subsystem
+2021-03-09 15:14:48,174 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 60) WFLYNAM0001: Activating Naming Subsystem
+2021-03-09 15:14:48,174 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 68) WFLYTX0013: The node-identifier attribute on the /subsystem=transactions is set to the default value. This is a danger for environments running multiple servers. Please make sure the attribute value is unique.
+2021-03-09 15:14:48,176 INFO  [org.jboss.as.jaxrs] (ServerService Thread Pool -- 52) WFLYRS0016: RESTEasy version 3.14.0.Final-redhat-00001
+2021-03-09 15:14:48,177 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 51) WFLYIO001: Worker 'default' has auto-configured to 24 IO threads with 192 max task threads based on your 12 available processors
+2021-03-09 15:14:48,184 INFO  [org.wildfly.extension.metrics] (ServerService Thread Pool -- 59) WFLYMETRICS0001: Activating Base Metrics Subsystem
+2021-03-09 15:14:48,185 INFO  [org.jboss.as.jsf] (ServerService Thread Pool -- 57) WFLYJSF0007: Activated the following JSF Implementations: [main]
+2021-03-09 15:14:48,188 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 66) WFLYSEC0002: Activating Security Subsystem
+2021-03-09 15:14:48,192 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 70) WFLYWS0002: Activating WebServices Extension
+2021-03-09 15:14:48,193 INFO  [org.jboss.as.security] (MSC service thread 1-3) WFLYSEC0001: Current PicketBox version=5.0.3.Final-redhat-00007
+2021-03-09 15:14:48,203 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) WFLYUT0003: Undertow 2.2.3.SP1-redhat-00001 starting
+2021-03-09 15:14:48,204 INFO  [org.jboss.as.connector] (MSC service thread 1-8) WFLYJCA0009: Starting JCA Subsystem (WildFly/IronJacamar 1.4.25.Final-redhat-00001)
+2021-03-09 15:14:48,220 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 41) WFLYJCA0004: Deploying JDBC-compliant driver class org.h2.Driver (version 1.4)
+2021-03-09 15:14:48,224 INFO  [org.jboss.as.naming] (MSC service thread 1-6) WFLYNAM0003: Starting Naming Service
+2021-03-09 15:14:48,225 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-4) WFLYJCA0018: Started Driver service with driver-name = h2
+2021-03-09 15:14:48,233 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-2) WFLYMAIL0001: Bound mail session [java:jboss/mail/Default]
+2021-03-09 15:14:48,241 INFO  [org.jboss.remoting] (MSC service thread 1-5) JBoss Remoting version 5.0.20.Final-redhat-00001
+2021-03-09 15:14:48,285 WARN  [org.wildfly.extension.elytron] (MSC service thread 1-2) WFLYELY00023: KeyStore file '/Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/standalone/configuration/application.keystore' does not exist. Used blank.
+2021-03-09 15:14:48,292 WARN  [org.wildfly.extension.elytron] (MSC service thread 1-1) WFLYELY01084: KeyStore /Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/standalone/configuration/application.keystore not found, it will be auto generated on first use with a self-signed certificate for host localhost
+2021-03-09 15:14:48,305 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 69) WFLYUT0014: Creating file handler for path '/Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/welcome-content' with options [directory-listing: 'false', follow-symlink: 'false', case-sensitive: 'true', safe-symlink-paths: '[]']
+2021-03-09 15:14:48,315 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0012: Started server default-server.
+2021-03-09 15:14:48,317 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) WFLYUT0018: Host default-host starting
+2021-03-09 15:14:48,325 INFO  [org.jboss.as.ejb3] (MSC service thread 1-5) WFLYEJB0481: Strict pool slsb-strict-max-pool is using a max instance size of 192 (per class), which is derived from thread worker pool sizing.
+2021-03-09 15:14:48,325 INFO  [org.jboss.as.ejb3] (MSC service thread 1-4) WFLYEJB0482: Strict pool mdb-strict-max-pool is using a max instance size of 48 (per class), which is derived from the number of CPUs on this host.
+2021-03-09 15:14:48,386 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0006: Undertow HTTP listener default listening on 127.0.0.1:8080
+2021-03-09 15:14:48,415 INFO  [org.jboss.as.patching] (MSC service thread 1-6) WFLYPAT0050: JBoss EAP cumulative patch ID is: base, one-off patches include: none
+2021-03-09 15:14:48,427 WARN  [org.jboss.as.domain.management.security] (MSC service thread 1-4) WFLYDM0111: Keystore /Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/standalone/configuration/application.keystore not found, it will be auto generated on first use with a self signed certificate for host localhost
+2021-03-09 15:14:48,431 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-1) WFLYDS0013: Started FileSystemDeploymentService for directory /Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/standalone/deployments
+2021-03-09 15:14:48,438 INFO  [org.jboss.as.ejb3] (MSC service thread 1-3) WFLYEJB0493: EJB subsystem suspension complete
+2021-03-09 15:14:48,461 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0006: Undertow HTTPS listener https listening on 127.0.0.1:8443
+2021-03-09 15:14:48,487 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-7) WFLYJCA0001: Bound data source [java:jboss/datasources/ExampleDS]
+2021-03-09 15:14:48,515 INFO  [org.jboss.ws.common.management] (MSC service thread 1-2) JBWS022052: Starting JBossWS 5.4.2.Final-redhat-00001 (Apache CXF 3.3.7.redhat-00001) 
+2021-03-09 15:14:48,590 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0212: Resuming server
+2021-03-09 15:14:48,592 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0025: JBoss EAP 7.4.0.Beta (WildFly Core 14.0.1.Final-redhat-00001) started in 3217ms - Started 316 of 555 services (344 services are lazy, passive or on-demand)
+2021-03-09 15:14:48,594 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0060: Http management interface listening on http://127.0.0.1:9990/management
+2021-03-09 15:14:48,594 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0051: Admin console listening on http://127.0.0.1:9990
+2021-03-09 15:15:02,171 INFO  [org.jboss.as.server] (Thread-3) WFLYSRV0272: Suspending server
+2021-03-09 15:15:02,172 INFO  [org.jboss.as.ejb3] (Thread-3) WFLYEJB0493: EJB subsystem suspension complete
+2021-03-09 15:15:02,173 INFO  [org.jboss.as.server] (Thread-3) WFLYSRV0220: Server shutdown has been requested via an OS signal
+2021-03-09 15:15:02,181 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-3) WFLYJCA0010: Unbound data source [java:jboss/datasources/ExampleDS]
+2021-03-09 15:15:02,182 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-7) WFLYMAIL0002: Unbound mail session [java:jboss/mail/Default]
+2021-03-09 15:15:02,182 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0019: Host default-host stopping
+2021-03-09 15:15:02,182 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0008: Undertow HTTPS listener https suspending
+2021-03-09 15:15:02,183 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) WFLYUT0008: Undertow HTTP listener default suspending
+2021-03-09 15:15:02,185 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-7) WFLYJCA0019: Stopped Driver service with driver-name = h2
+2021-03-09 15:15:02,187 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) WFLYUT0007: Undertow HTTP listener default stopped, was bound to 127.0.0.1:8080
+2021-03-09 15:15:02,187 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0007: Undertow HTTPS listener https stopped, was bound to 127.0.0.1:8443
+2021-03-09 15:15:02,188 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) WFLYUT0004: Undertow 2.2.3.SP1-redhat-00001 stopping
+2021-03-09 15:15:02,197 INFO  [org.jboss.as] (MSC service thread 1-6) WFLYSRV0050: JBoss EAP 7.4.0.Beta (WildFly Core 14.0.1.Final-redhat-00001) stopped in 20ms
+2021-03-09 20:09:43,668 INFO  [org.jboss.modules] (main) JBoss Modules version 1.11.0.Final-redhat-00001
+2021-03-09 20:09:44,295 INFO  [org.wildfly.security] (main) ELY00001: WildFly Elytron version 1.14.1.Final-redhat-00001
+2021-03-09 20:09:44,871 INFO  [org.apache.sshd.common.io.DefaultIoServiceFactoryFactory] (main) No detected/configured IoServiceFactoryFactory using Nio2ServiceFactoryFactory
+2021-03-09 20:09:45,916 INFO  [org.jboss.as.server] (main) WFLYSRV0278: The configuration history is managed through Git
+2021-03-09 20:09:45,927 INFO  [org.jboss.msc] (main) JBoss MSC version 1.4.12.Final-redhat-00001
+2021-03-09 20:09:45,932 INFO  [org.jboss.threads] (main) JBoss Threads version 2.4.0.Final-redhat-00001
+2021-03-09 20:09:46,008 INFO  [org.jboss.as] (MSC service thread 1-2) WFLYSRV0049: JBoss EAP 7.4.0.Beta (WildFly Core 14.0.1.Final-redhat-00001) starting
+2021-03-09 20:09:46,009 DEBUG [org.jboss.as.config] (MSC service thread 1-2) Configured system properties:
+	[Standalone] = 
+	file.encoding = UTF-8
+	file.separator = /
+	ftp.nonProxyHosts = local|*.local|169.254/16|*.169.254/16|lx.astxsvc.com|*.lx.astxsvc.com|localhost|*.localhost|127.0.0.1:21300|*.127.0.0.1:21300
+	http.nonProxyHosts = local|*.local|169.254/16|*.169.254/16|lx.astxsvc.com|*.lx.astxsvc.com|localhost|*.localhost|127.0.0.1:21300|*.127.0.0.1:21300
+	java.awt.headless = true
+	java.class.path = /Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/jboss-modules.jar
+	java.class.version = 58.0
+	java.home = /Library/Java/JavaVirtualMachines/openjdk-14.0.1.jdk/Contents/Home
+	java.io.tmpdir = /var/folders/3g/g5jgkj0553s5dkwc3zw_p7_m0000gn/T/
+	java.library.path = /Users/danieloh/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+	java.net.preferIPv4Stack = true
+	java.runtime.name = OpenJDK Runtime Environment
+	java.runtime.version = 14.0.1+7
+	java.specification.name = Java Platform API Specification
+	java.specification.vendor = Oracle Corporation
+	java.specification.version = 14
+	java.util.logging.manager = org.jboss.logmanager.LogManager
+	java.vendor = Oracle Corporation
+	java.vendor.url = https://java.oracle.com/
+	java.vendor.url.bug = https://bugreport.java.com/bugreport/
+	java.version = 14.0.1
+	java.version.date = 2020-04-14
+	java.vm.compressedOopsMode = Zero based
+	java.vm.info = mixed mode, sharing
+	java.vm.name = OpenJDK 64-Bit Server VM
+	java.vm.specification.name = Java Virtual Machine Specification
+	java.vm.specification.vendor = Oracle Corporation
+	java.vm.specification.version = 14
+	java.vm.vendor = Oracle Corporation
+	java.vm.version = 14.0.1+7
+	javax.management.builder.initial = org.jboss.as.jmx.PluggableMBeanServerBuilder
+	jboss.home.dir = /Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta
+	jboss.host.name = daniels-macbook-pro
+	jboss.modules.dir = /Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/modules
+	jboss.modules.system.pkgs = org.jboss.byteman
+	jboss.node.name = daniels-macbook-pro
+	jboss.qualified.host.name = daniels-macbook-pro
+	jboss.server.base.dir = /Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/standalone
+	jboss.server.config.dir = /Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/standalone/configuration
+	jboss.server.data.dir = /Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/standalone/data
+	jboss.server.deploy.dir = /Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/standalone/data/content
+	jboss.server.log.dir = /Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/standalone/log
+	jboss.server.name = daniels-macbook-pro
+	jboss.server.persist.config = true
+	jboss.server.temp.dir = /Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/standalone/tmp
+	jdk.debug = release
+	line.separator = 
+
+	logging.configuration = file:/Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/standalone/configuration/logging.properties
+	module.path = /Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/modules
+	org.jboss.boot.log.file = /Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/standalone/log/server.log
+	org.jboss.resolver.warning = true
+	os.arch = x86_64
+	os.name = Mac OS X
+	os.version = 10.16
+	path.separator = :
+	socksNonProxyHosts = local|*.local|169.254/16|*.169.254/16|lx.astxsvc.com|*.lx.astxsvc.com|localhost|*.localhost|127.0.0.1:21300|*.127.0.0.1:21300
+	sun.arch.data.model = 64
+	sun.boot.library.path = /Library/Java/JavaVirtualMachines/openjdk-14.0.1.jdk/Contents/Home/lib
+	sun.cpu.endian = little
+	sun.io.unicode.encoding = UnicodeBig
+	sun.java.command = /Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/jboss-modules.jar -mp /Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/modules org.jboss.as.standalone -Djboss.home.dir=/Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta -Djboss.server.base.dir=/Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/standalone --git-repo=git@github.com:danieloh30/eap-gitssh-demo.git --git-branch=main --git-auth=file:///Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/wildfly-config.xml
+	sun.java.launcher = SUN_STANDARD
+	sun.jnu.encoding = UTF-8
+	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+	user.country = US
+	user.dir = /Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta
+	user.home = /Users/danieloh
+	user.language = en
+	user.name = danieloh
+	user.timezone = America/New_York
+2021-03-09 20:09:46,011 DEBUG [org.jboss.as.config] (MSC service thread 1-2) VM Arguments: -D[Standalone] -Xlog:gc*:file=/Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/standalone/log/gc.log:time,uptimemillis:filecount=5,filesize=3M -Xms1303m -Xmx1303m -XX:MetaspaceSize=96M -XX:MaxMetaspaceSize=256m -Djava.net.preferIPv4Stack=true -Djboss.modules.system.pkgs=org.jboss.byteman -Djava.awt.headless=true --add-exports=java.base/sun.nio.ch=ALL-UNNAMED --add-exports=jdk.unsupported/sun.misc=ALL-UNNAMED --add-exports=jdk.unsupported/sun.reflect=ALL-UNNAMED -Dorg.jboss.boot.log.file=/Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/standalone/log/server.log -Dlogging.configuration=file:/Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/standalone/configuration/logging.properties 
+2021-03-09 20:09:46,919 INFO  [org.jboss.as.controller.management-deprecated] (Controller Boot Thread) WFLYCTL0028: Attribute 'security-realm' in the resource at address '/core-service=management/management-interface=http-interface' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+2021-03-09 20:09:46,934 INFO  [org.jboss.as.controller.management-deprecated] (ServerService Thread Pool -- 15) WFLYCTL0028: Attribute 'security-realm' in the resource at address '/subsystem=undertow/server=default-server/https-listener=https' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+2021-03-09 20:09:46,986 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0039: Creating http management service using socket-binding (management-http)
+2021-03-09 20:09:47,001 INFO  [org.xnio] (MSC service thread 1-6) XNIO version 3.8.4.Final-redhat-00001
+2021-03-09 20:09:47,007 INFO  [org.xnio.nio] (MSC service thread 1-6) XNIO NIO Implementation Version 3.8.4.Final-redhat-00001
+2021-03-09 20:09:47,027 INFO  [org.wildfly.extension.health] (ServerService Thread Pool -- 49) WFLYHEALTH0001: Activating Base Health Subsystem
+2021-03-09 20:09:47,027 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 50) WFLYCLINF0001: Activating Infinispan subsystem.
+2021-03-09 20:09:47,042 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 60) WFLYNAM0001: Activating Naming Subsystem
+2021-03-09 20:09:47,041 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 51) WFLYIO001: Worker 'default' has auto-configured to 24 IO threads with 192 max task threads based on your 12 available processors
+2021-03-09 20:09:47,042 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 68) WFLYTX0013: The node-identifier attribute on the /subsystem=transactions is set to the default value. This is a danger for environments running multiple servers. Please make sure the attribute value is unique.
+2021-03-09 20:09:47,045 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 66) WFLYSEC0002: Activating Security Subsystem
+2021-03-09 20:09:47,047 INFO  [org.jboss.as.jsf] (ServerService Thread Pool -- 57) WFLYJSF0007: Activated the following JSF Implementations: [main]
+2021-03-09 20:09:47,049 INFO  [org.wildfly.extension.metrics] (ServerService Thread Pool -- 59) WFLYMETRICS0001: Activating Base Metrics Subsystem
+2021-03-09 20:09:47,053 INFO  [org.jboss.as.security] (MSC service thread 1-8) WFLYSEC0001: Current PicketBox version=5.0.3.Final-redhat-00007
+2021-03-09 20:09:47,054 INFO  [org.jboss.as.jaxrs] (ServerService Thread Pool -- 52) WFLYRS0016: RESTEasy version 3.14.0.Final-redhat-00001
+2021-03-09 20:09:47,057 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 70) WFLYWS0002: Activating WebServices Extension
+2021-03-09 20:09:47,057 INFO  [org.jboss.as.connector] (MSC service thread 1-1) WFLYJCA0009: Starting JCA Subsystem (WildFly/IronJacamar 1.4.25.Final-redhat-00001)
+2021-03-09 20:09:47,078 INFO  [org.jboss.remoting] (MSC service thread 1-4) JBoss Remoting version 5.0.20.Final-redhat-00001
+2021-03-09 20:09:47,084 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 41) WFLYJCA0004: Deploying JDBC-compliant driver class org.h2.Driver (version 1.4)
+2021-03-09 20:09:47,089 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0003: Undertow 2.2.3.SP1-redhat-00001 starting
+2021-03-09 20:09:47,091 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-1) WFLYJCA0018: Started Driver service with driver-name = h2
+2021-03-09 20:09:47,103 INFO  [org.jboss.as.naming] (MSC service thread 1-1) WFLYNAM0003: Starting Naming Service
+2021-03-09 20:09:47,104 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-7) WFLYMAIL0001: Bound mail session [java:jboss/mail/Default]
+2021-03-09 20:09:47,130 WARN  [org.wildfly.extension.elytron] (MSC service thread 1-3) WFLYELY00023: KeyStore file '/Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/standalone/configuration/application.keystore' does not exist. Used blank.
+2021-03-09 20:09:47,142 WARN  [org.wildfly.extension.elytron] (MSC service thread 1-3) WFLYELY01084: KeyStore /Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/standalone/configuration/application.keystore not found, it will be auto generated on first use with a self-signed certificate for host localhost
+2021-03-09 20:09:47,176 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 69) WFLYUT0014: Creating file handler for path '/Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/welcome-content' with options [directory-listing: 'false', follow-symlink: 'false', case-sensitive: 'true', safe-symlink-paths: '[]']
+2021-03-09 20:09:47,184 INFO  [org.jboss.as.ejb3] (MSC service thread 1-1) WFLYEJB0481: Strict pool slsb-strict-max-pool is using a max instance size of 192 (per class), which is derived from thread worker pool sizing.
+2021-03-09 20:09:47,184 INFO  [org.jboss.as.ejb3] (MSC service thread 1-2) WFLYEJB0482: Strict pool mdb-strict-max-pool is using a max instance size of 48 (per class), which is derived from the number of CPUs on this host.
+2021-03-09 20:09:47,186 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) WFLYUT0012: Started server default-server.
+2021-03-09 20:09:47,188 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0018: Host default-host starting
+2021-03-09 20:09:47,258 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) WFLYUT0006: Undertow HTTP listener default listening on 127.0.0.1:8080
+2021-03-09 20:09:47,287 INFO  [org.jboss.as.ejb3] (MSC service thread 1-6) WFLYEJB0493: EJB subsystem suspension complete
+2021-03-09 20:09:47,330 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-3) WFLYJCA0001: Bound data source [java:jboss/datasources/ExampleDS]
+2021-03-09 20:09:47,360 INFO  [org.jboss.as.patching] (MSC service thread 1-2) WFLYPAT0050: JBoss EAP cumulative patch ID is: base, one-off patches include: none
+2021-03-09 20:09:47,372 WARN  [org.jboss.as.domain.management.security] (MSC service thread 1-3) WFLYDM0111: Keystore /Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/standalone/configuration/application.keystore not found, it will be auto generated on first use with a self signed certificate for host localhost
+2021-03-09 20:09:47,377 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-8) WFLYDS0013: Started FileSystemDeploymentService for directory /Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/standalone/deployments
+2021-03-09 20:09:47,399 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0006: Undertow HTTPS listener https listening on 127.0.0.1:8443
+2021-03-09 20:09:47,482 INFO  [org.jboss.ws.common.management] (MSC service thread 1-4) JBWS022052: Starting JBossWS 5.4.2.Final-redhat-00001 (Apache CXF 3.3.7.redhat-00001) 
+2021-03-09 20:09:47,573 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0212: Resuming server
+2021-03-09 20:09:47,575 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0025: JBoss EAP 7.4.0.Beta (WildFly Core 14.0.1.Final-redhat-00001) started in 4221ms - Started 316 of 555 services (344 services are lazy, passive or on-demand)
+2021-03-09 20:09:47,577 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0060: Http management interface listening on http://127.0.0.1:9990/management
+2021-03-09 20:09:47,577 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0051: Admin console listening on http://127.0.0.1:9990
+2021-03-09 20:11:52,772 INFO  [org.jboss.as.repository] (DeploymentScanner-threads - 1) WFLYDR0001: Content added at location /Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/standalone/data/content/60/a055f75d60387485112c6caabcdf3de6374620/content
+2021-03-09 20:11:53,360 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-3) WFLYSRV0027: Starting deployment of "ROOT.war" (runtime-name: "ROOT.war")
+2021-03-09 20:11:55,331 ERROR [org.jboss.msc.service.fail] (MSC service thread 1-3) MSC000001: Failed to start service jboss.deployment.unit."ROOT.war".PARSE: org.jboss.msc.service.StartException in service jboss.deployment.unit."ROOT.war".PARSE: WFLYSRV0153: Failed to process phase PARSE of deployment "ROOT.war"
+	at org.jboss.as.server@14.0.1.Final-redhat-00001//org.jboss.as.server.deployment.DeploymentUnitPhaseService.start(DeploymentUnitPhaseService.java:189)
+	at org.jboss.msc@1.4.12.Final-redhat-00001//org.jboss.msc.service.ServiceControllerImpl$StartTask.startService(ServiceControllerImpl.java:1739)
+	at org.jboss.msc@1.4.12.Final-redhat-00001//org.jboss.msc.service.ServiceControllerImpl$StartTask.execute(ServiceControllerImpl.java:1701)
+	at org.jboss.msc@1.4.12.Final-redhat-00001//org.jboss.msc.service.ServiceControllerImpl$ControllerTask.run(ServiceControllerImpl.java:1559)
+	at org.jboss.threads@2.4.0.Final-redhat-00001//org.jboss.threads.ContextClassLoaderSavingRunnable.run(ContextClassLoaderSavingRunnable.java:35)
+	at org.jboss.threads@2.4.0.Final-redhat-00001//org.jboss.threads.EnhancedQueueExecutor.safeRun(EnhancedQueueExecutor.java:1990)
+	at org.jboss.threads@2.4.0.Final-redhat-00001//org.jboss.threads.EnhancedQueueExecutor$ThreadBody.doRunTask(EnhancedQueueExecutor.java:1486)
+	at org.jboss.threads@2.4.0.Final-redhat-00001//org.jboss.threads.EnhancedQueueExecutor$ThreadBody.run(EnhancedQueueExecutor.java:1377)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+Caused by: org.jboss.msc.service.ServiceNotFoundException: service jboss.ejb.default-resource-adapter-name-service not found
+	at org.jboss.msc@1.4.12.Final-redhat-00001//org.jboss.msc.service.ServiceContainerImpl.getRequiredService(ServiceContainerImpl.java:663)
+	at org.jboss.as.ejb3@7.4.0.Beta-redhat-00001//org.jboss.as.ejb3.deployment.processors.MessageDrivenComponentDescriptionFactory.getDefaultResourceAdapterName(MessageDrivenComponentDescriptionFactory.java:257)
+	at org.jboss.as.ejb3@7.4.0.Beta-redhat-00001//org.jboss.as.ejb3.deployment.processors.MessageDrivenComponentDescriptionFactory.processMessageBeans(MessageDrivenComponentDescriptionFactory.java:156)
+	at org.jboss.as.ejb3@7.4.0.Beta-redhat-00001//org.jboss.as.ejb3.deployment.processors.MessageDrivenComponentDescriptionFactory.processAnnotations(MessageDrivenComponentDescriptionFactory.java:83)
+	at org.jboss.as.ejb3@7.4.0.Beta-redhat-00001//org.jboss.as.ejb3.deployment.processors.AnnotatedEJBComponentDescriptionDeploymentUnitProcessor.processAnnotations(AnnotatedEJBComponentDescriptionDeploymentUnitProcessor.java:150)
+	at org.jboss.as.ejb3@7.4.0.Beta-redhat-00001//org.jboss.as.ejb3.deployment.processors.AnnotatedEJBComponentDescriptionDeploymentUnitProcessor.deploy(AnnotatedEJBComponentDescriptionDeploymentUnitProcessor.java:82)
+	at org.jboss.as.server@14.0.1.Final-redhat-00001//org.jboss.as.server.deployment.DeploymentUnitPhaseService.start(DeploymentUnitPhaseService.java:182)
+	... 8 more
+
+2021-03-09 20:11:55,333 ERROR [org.jboss.as.controller.management-operation] (DeploymentScanner-threads - 1) WFLYCTL0013: Operation ("deploy") failed - address: ([("deployment" => "ROOT.war")]) - failure description: {"WFLYCTL0080: Failed services" => {"jboss.deployment.unit.\"ROOT.war\".PARSE" => "WFLYSRV0153: Failed to process phase PARSE of deployment \"ROOT.war\"
+    Caused by: org.jboss.msc.service.ServiceNotFoundException: service jboss.ejb.default-resource-adapter-name-service not found"}}
+2021-03-09 20:11:56,266 INFO  [org.jboss.as.server] (DeploymentScanner-threads - 1) WFLYSRV0010: Deployed "ROOT.war" (runtime-name : "ROOT.war")
+2021-03-09 20:11:56,267 INFO  [org.jboss.as.controller] (DeploymentScanner-threads - 1) WFLYCTL0183: Service status report
+WFLYCTL0186:   Services which failed to start:      service jboss.deployment.unit."ROOT.war".PARSE: WFLYSRV0153: Failed to process phase PARSE of deployment "ROOT.war"
+
+2021-03-09 20:17:00,237 INFO  [org.jboss.as.repository] (DeploymentScanner-threads - 1) WFLYDR0001: Content added at location /Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/standalone/data/content/2c/39fae2d95d4ab458bd052344c696da4117ffe3/content
+2021-03-09 20:17:01,225 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-3) WFLYSRV0028: Stopped deployment ROOT.war (runtime-name: ROOT.war) in 460ms
+2021-03-09 20:17:01,226 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-3) WFLYSRV0027: Starting deployment of "ROOT.war" (runtime-name: "ROOT.war")
+2021-03-09 20:17:02,412 ERROR [org.jboss.msc.service.fail] (MSC service thread 1-3) MSC000001: Failed to start service jboss.deployment.unit."ROOT.war".PARSE: org.jboss.msc.service.StartException in service jboss.deployment.unit."ROOT.war".PARSE: WFLYSRV0153: Failed to process phase PARSE of deployment "ROOT.war"
+	at org.jboss.as.server@14.0.1.Final-redhat-00001//org.jboss.as.server.deployment.DeploymentUnitPhaseService.start(DeploymentUnitPhaseService.java:189)
+	at org.jboss.msc@1.4.12.Final-redhat-00001//org.jboss.msc.service.ServiceControllerImpl$StartTask.startService(ServiceControllerImpl.java:1739)
+	at org.jboss.msc@1.4.12.Final-redhat-00001//org.jboss.msc.service.ServiceControllerImpl$StartTask.execute(ServiceControllerImpl.java:1701)
+	at org.jboss.msc@1.4.12.Final-redhat-00001//org.jboss.msc.service.ServiceControllerImpl$ControllerTask.run(ServiceControllerImpl.java:1559)
+	at org.jboss.threads@2.4.0.Final-redhat-00001//org.jboss.threads.ContextClassLoaderSavingRunnable.run(ContextClassLoaderSavingRunnable.java:35)
+	at org.jboss.threads@2.4.0.Final-redhat-00001//org.jboss.threads.EnhancedQueueExecutor.safeRun(EnhancedQueueExecutor.java:1990)
+	at org.jboss.threads@2.4.0.Final-redhat-00001//org.jboss.threads.EnhancedQueueExecutor$ThreadBody.doRunTask(EnhancedQueueExecutor.java:1486)
+	at org.jboss.threads@2.4.0.Final-redhat-00001//org.jboss.threads.EnhancedQueueExecutor$ThreadBody.run(EnhancedQueueExecutor.java:1377)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+Caused by: org.jboss.msc.service.ServiceNotFoundException: service jboss.ejb.default-resource-adapter-name-service not found
+	at org.jboss.msc@1.4.12.Final-redhat-00001//org.jboss.msc.service.ServiceContainerImpl.getRequiredService(ServiceContainerImpl.java:663)
+	at org.jboss.as.ejb3@7.4.0.Beta-redhat-00001//org.jboss.as.ejb3.deployment.processors.MessageDrivenComponentDescriptionFactory.getDefaultResourceAdapterName(MessageDrivenComponentDescriptionFactory.java:257)
+	at org.jboss.as.ejb3@7.4.0.Beta-redhat-00001//org.jboss.as.ejb3.deployment.processors.MessageDrivenComponentDescriptionFactory.processMessageBeans(MessageDrivenComponentDescriptionFactory.java:156)
+	at org.jboss.as.ejb3@7.4.0.Beta-redhat-00001//org.jboss.as.ejb3.deployment.processors.MessageDrivenComponentDescriptionFactory.processAnnotations(MessageDrivenComponentDescriptionFactory.java:83)
+	at org.jboss.as.ejb3@7.4.0.Beta-redhat-00001//org.jboss.as.ejb3.deployment.processors.AnnotatedEJBComponentDescriptionDeploymentUnitProcessor.processAnnotations(AnnotatedEJBComponentDescriptionDeploymentUnitProcessor.java:150)
+	at org.jboss.as.ejb3@7.4.0.Beta-redhat-00001//org.jboss.as.ejb3.deployment.processors.AnnotatedEJBComponentDescriptionDeploymentUnitProcessor.deploy(AnnotatedEJBComponentDescriptionDeploymentUnitProcessor.java:82)
+	at org.jboss.as.server@14.0.1.Final-redhat-00001//org.jboss.as.server.deployment.DeploymentUnitPhaseService.start(DeploymentUnitPhaseService.java:182)
+	... 8 more
+
+2021-03-09 20:17:02,413 ERROR [org.jboss.as.controller.management-operation] (DeploymentScanner-threads - 1) WFLYCTL0013: Operation ("full-replace-deployment") failed - address: ([]) - failure description: {"WFLYCTL0080: Failed services" => {"jboss.deployment.unit.\"ROOT.war\".PARSE" => "WFLYSRV0153: Failed to process phase PARSE of deployment \"ROOT.war\"
+    Caused by: org.jboss.msc.service.ServiceNotFoundException: service jboss.ejb.default-resource-adapter-name-service not found"}}
+2021-03-09 20:17:04,039 INFO  [org.jboss.as.server] (DeploymentScanner-threads - 1) WFLYSRV0016: Replaced deployment "ROOT.war" with deployment "ROOT.war"
+2021-03-09 20:17:04,040 INFO  [org.jboss.as.controller] (DeploymentScanner-threads - 1) WFLYCTL0183: Service status report
+WFLYCTL0186:   Services which failed to start:      service jboss.deployment.unit."ROOT.war".PARSE: WFLYSRV0153: Failed to process phase PARSE of deployment "ROOT.war"
+
+2021-03-09 20:17:04,045 INFO  [org.jboss.as.repository] (DeploymentScanner-threads - 1) WFLYDR0002: Content removed from location /Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/standalone/data/content/60/a055f75d60387485112c6caabcdf3de6374620/content
+2021-03-09 21:08:15,970 INFO  [org.jboss.as.server] (Thread-6) WFLYSRV0272: Suspending server
+2021-03-09 21:08:16,075 INFO  [org.jboss.as.ejb3] (Thread-6) WFLYEJB0493: EJB subsystem suspension complete
+2021-03-09 21:08:16,116 INFO  [org.jboss.as.server] (Thread-6) WFLYSRV0220: Server shutdown has been requested via an OS signal
+2021-03-09 21:08:16,225 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-8) WFLYJCA0010: Unbound data source [java:jboss/datasources/ExampleDS]
+2021-03-09 21:08:16,237 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-2) WFLYMAIL0002: Unbound mail session [java:jboss/mail/Default]
+2021-03-09 21:08:16,241 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0019: Host default-host stopping
+2021-03-09 21:08:16,248 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0008: Undertow HTTPS listener https suspending
+2021-03-09 21:08:16,248 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0008: Undertow HTTP listener default suspending
+2021-03-09 21:08:16,249 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0007: Undertow HTTPS listener https stopped, was bound to 127.0.0.1:8443
+2021-03-09 21:08:16,249 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0007: Undertow HTTP listener default stopped, was bound to 127.0.0.1:8080
+2021-03-09 21:08:16,253 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-5) WFLYJCA0019: Stopped Driver service with driver-name = h2
+2021-03-09 21:08:16,253 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0004: Undertow 2.2.3.SP1-redhat-00001 stopping
+2021-03-09 21:08:16,725 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-4) WFLYSRV0028: Stopped deployment ROOT.war (runtime-name: ROOT.war) in 579ms
+2021-03-09 21:08:16,733 INFO  [org.jboss.as] (MSC service thread 1-8) WFLYSRV0050: JBoss EAP 7.4.0.Beta (WildFly Core 14.0.1.Final-redhat-00001) stopped in 587ms
+2021-03-09 21:15:30,167 INFO  [org.jboss.modules] (main) JBoss Modules version 1.11.0.Final-redhat-00001
+2021-03-09 21:15:31,218 INFO  [org.wildfly.security] (main) ELY00001: WildFly Elytron version 1.14.1.Final-redhat-00001
+2021-03-09 21:15:31,766 INFO  [org.apache.sshd.common.io.DefaultIoServiceFactoryFactory] (main) No detected/configured IoServiceFactoryFactory using Nio2ServiceFactoryFactory
+2021-03-09 21:15:32,739 INFO  [org.jboss.as.server] (main) WFLYSRV0278: The configuration history is managed through Git
+2021-03-09 21:15:32,749 INFO  [org.jboss.msc] (main) JBoss MSC version 1.4.12.Final-redhat-00001
+2021-03-09 21:15:32,753 INFO  [org.jboss.threads] (main) JBoss Threads version 2.4.0.Final-redhat-00001
+2021-03-09 21:15:32,824 INFO  [org.jboss.as] (MSC service thread 1-2) WFLYSRV0049: JBoss EAP 7.4.0.Beta (WildFly Core 14.0.1.Final-redhat-00001) starting
+2021-03-09 21:15:32,825 DEBUG [org.jboss.as.config] (MSC service thread 1-2) Configured system properties:
+	[Standalone] = 
+	file.encoding = UTF-8
+	file.separator = /
+	ftp.nonProxyHosts = local|*.local|169.254/16|*.169.254/16|lx.astxsvc.com|*.lx.astxsvc.com|localhost|*.localhost|127.0.0.1:21300|*.127.0.0.1:21300
+	http.nonProxyHosts = local|*.local|169.254/16|*.169.254/16|lx.astxsvc.com|*.lx.astxsvc.com|localhost|*.localhost|127.0.0.1:21300|*.127.0.0.1:21300
+	java.awt.headless = true
+	java.class.path = /Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/jboss-modules.jar
+	java.class.version = 58.0
+	java.home = /Library/Java/JavaVirtualMachines/openjdk-14.0.1.jdk/Contents/Home
+	java.io.tmpdir = /var/folders/3g/g5jgkj0553s5dkwc3zw_p7_m0000gn/T/
+	java.library.path = /Users/danieloh/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+	java.net.preferIPv4Stack = true
+	java.runtime.name = OpenJDK Runtime Environment
+	java.runtime.version = 14.0.1+7
+	java.specification.name = Java Platform API Specification
+	java.specification.vendor = Oracle Corporation
+	java.specification.version = 14
+	java.util.logging.manager = org.jboss.logmanager.LogManager
+	java.vendor = Oracle Corporation
+	java.vendor.url = https://java.oracle.com/
+	java.vendor.url.bug = https://bugreport.java.com/bugreport/
+	java.version = 14.0.1
+	java.version.date = 2020-04-14
+	java.vm.compressedOopsMode = Zero based
+	java.vm.info = mixed mode, sharing
+	java.vm.name = OpenJDK 64-Bit Server VM
+	java.vm.specification.name = Java Virtual Machine Specification
+	java.vm.specification.vendor = Oracle Corporation
+	java.vm.specification.version = 14
+	java.vm.vendor = Oracle Corporation
+	java.vm.version = 14.0.1+7
+	javax.management.builder.initial = org.jboss.as.jmx.PluggableMBeanServerBuilder
+	jboss.home.dir = /Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta
+	jboss.host.name = daniels-macbook-pro
+	jboss.modules.dir = /Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/modules
+	jboss.modules.system.pkgs = org.jboss.byteman
+	jboss.node.name = daniels-macbook-pro
+	jboss.qualified.host.name = daniels-macbook-pro
+	jboss.server.base.dir = /Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/standalone
+	jboss.server.config.dir = /Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/standalone/configuration
+	jboss.server.data.dir = /Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/standalone/data
+	jboss.server.deploy.dir = /Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/standalone/data/content
+	jboss.server.log.dir = /Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/standalone/log
+	jboss.server.name = daniels-macbook-pro
+	jboss.server.persist.config = true
+	jboss.server.temp.dir = /Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/standalone/tmp
+	jdk.debug = release
+	line.separator = 
+
+	logging.configuration = file:/Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/standalone/configuration/logging.properties
+	module.path = /Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/modules
+	org.jboss.boot.log.file = /Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/standalone/log/server.log
+	org.jboss.resolver.warning = true
+	os.arch = x86_64
+	os.name = Mac OS X
+	os.version = 10.16
+	path.separator = :
+	socksNonProxyHosts = local|*.local|169.254/16|*.169.254/16|lx.astxsvc.com|*.lx.astxsvc.com|localhost|*.localhost|127.0.0.1:21300|*.127.0.0.1:21300
+	sun.arch.data.model = 64
+	sun.boot.library.path = /Library/Java/JavaVirtualMachines/openjdk-14.0.1.jdk/Contents/Home/lib
+	sun.cpu.endian = little
+	sun.io.unicode.encoding = UnicodeBig
+	sun.java.command = /Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/jboss-modules.jar -mp /Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/modules org.jboss.as.standalone -Djboss.home.dir=/Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta -Djboss.server.base.dir=/Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/standalone --git-repo=git@github.com:danieloh30/eap-gitssh-demo.git --git-branch=main --git-auth=https://raw.githubusercontent.com/danieloh30/eap-gitssh-demo/main/wildfly-config.xml
+	sun.java.launcher = SUN_STANDARD
+	sun.jnu.encoding = UTF-8
+	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+	user.country = US
+	user.dir = /Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta
+	user.home = /Users/danieloh
+	user.language = en
+	user.name = danieloh
+	user.timezone = America/New_York
+2021-03-09 21:15:32,827 DEBUG [org.jboss.as.config] (MSC service thread 1-2) VM Arguments: -D[Standalone] -Xlog:gc*:file=/Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/standalone/log/gc.log:time,uptimemillis:filecount=5,filesize=3M -Xms1303m -Xmx1303m -XX:MetaspaceSize=96M -XX:MaxMetaspaceSize=256m -Djava.net.preferIPv4Stack=true -Djboss.modules.system.pkgs=org.jboss.byteman -Djava.awt.headless=true --add-exports=java.base/sun.nio.ch=ALL-UNNAMED --add-exports=jdk.unsupported/sun.misc=ALL-UNNAMED --add-exports=jdk.unsupported/sun.reflect=ALL-UNNAMED -Dorg.jboss.boot.log.file=/Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/standalone/log/server.log -Dlogging.configuration=file:/Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/standalone/configuration/logging.properties 
+2021-03-09 21:15:33,734 INFO  [org.jboss.as.controller.management-deprecated] (Controller Boot Thread) WFLYCTL0028: Attribute 'security-realm' in the resource at address '/core-service=management/management-interface=http-interface' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+2021-03-09 21:15:33,761 INFO  [org.jboss.as.controller.management-deprecated] (ServerService Thread Pool -- 5) WFLYCTL0028: Attribute 'security-realm' in the resource at address '/subsystem=undertow/server=default-server/https-listener=https' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+2021-03-09 21:15:33,789 INFO  [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 1) WFLYDS0015: Re-attempting failed deployment ROOT.war
+2021-03-09 21:15:33,956 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 22) WFLYDR0001: Content added at location /Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/standalone/data/content/2c/39fae2d95d4ab458bd052344c696da4117ffe3/content
+2021-03-09 21:15:34,557 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0039: Creating http management service using socket-binding (management-http)
+2021-03-09 21:15:34,568 INFO  [org.xnio] (MSC service thread 1-6) XNIO version 3.8.4.Final-redhat-00001
+2021-03-09 21:15:34,574 INFO  [org.xnio.nio] (MSC service thread 1-6) XNIO NIO Implementation Version 3.8.4.Final-redhat-00001
+2021-03-09 21:15:34,611 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 50) WFLYCLINF0001: Activating Infinispan subsystem.
+2021-03-09 21:15:34,617 INFO  [org.wildfly.extension.health] (ServerService Thread Pool -- 49) WFLYHEALTH0001: Activating Base Health Subsystem
+2021-03-09 21:15:34,617 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 68) WFLYTX0013: The node-identifier attribute on the /subsystem=transactions is set to the default value. This is a danger for environments running multiple servers. Please make sure the attribute value is unique.
+2021-03-09 21:15:34,619 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 60) WFLYNAM0001: Activating Naming Subsystem
+2021-03-09 21:15:34,621 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 51) WFLYIO001: Worker 'default' has auto-configured to 24 IO threads with 192 max task threads based on your 12 available processors
+2021-03-09 21:15:34,622 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 66) WFLYSEC0002: Activating Security Subsystem
+2021-03-09 21:15:34,624 INFO  [org.wildfly.extension.metrics] (ServerService Thread Pool -- 59) WFLYMETRICS0001: Activating Base Metrics Subsystem
+2021-03-09 21:15:34,626 INFO  [org.jboss.as.jaxrs] (ServerService Thread Pool -- 52) WFLYRS0016: RESTEasy version 3.14.0.Final-redhat-00001
+2021-03-09 21:15:34,627 INFO  [org.jboss.as.jsf] (ServerService Thread Pool -- 57) WFLYJSF0007: Activated the following JSF Implementations: [main]
+2021-03-09 21:15:34,628 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 70) WFLYWS0002: Activating WebServices Extension
+2021-03-09 21:15:34,630 INFO  [org.jboss.as.security] (MSC service thread 1-2) WFLYSEC0001: Current PicketBox version=5.0.3.Final-redhat-00007
+2021-03-09 21:15:34,632 INFO  [org.jboss.as.connector] (MSC service thread 1-1) WFLYJCA0009: Starting JCA Subsystem (WildFly/IronJacamar 1.4.25.Final-redhat-00001)
+2021-03-09 21:15:34,644 INFO  [org.jboss.remoting] (MSC service thread 1-6) JBoss Remoting version 5.0.20.Final-redhat-00001
+2021-03-09 21:15:34,656 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) WFLYUT0003: Undertow 2.2.3.SP1-redhat-00001 starting
+2021-03-09 21:15:34,664 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 41) WFLYJCA0004: Deploying JDBC-compliant driver class org.h2.Driver (version 1.4)
+2021-03-09 21:15:34,664 INFO  [org.jboss.as.naming] (MSC service thread 1-8) WFLYNAM0003: Starting Naming Service
+2021-03-09 21:15:34,666 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-1) WFLYMAIL0001: Bound mail session [java:jboss/mail/Default]
+2021-03-09 21:15:34,668 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-1) WFLYJCA0018: Started Driver service with driver-name = h2
+2021-03-09 21:15:34,694 WARN  [org.wildfly.extension.elytron] (MSC service thread 1-3) WFLYELY00023: KeyStore file '/Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/standalone/configuration/application.keystore' does not exist. Used blank.
+2021-03-09 21:15:34,702 WARN  [org.wildfly.extension.elytron] (MSC service thread 1-1) WFLYELY01084: KeyStore /Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/standalone/configuration/application.keystore not found, it will be auto generated on first use with a self-signed certificate for host localhost
+2021-03-09 21:15:34,726 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 69) WFLYUT0014: Creating file handler for path '/Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/welcome-content' with options [directory-listing: 'false', follow-symlink: 'false', case-sensitive: 'true', safe-symlink-paths: '[]']
+2021-03-09 21:15:34,735 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) WFLYUT0012: Started server default-server.
+2021-03-09 21:15:34,737 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) WFLYUT0018: Host default-host starting
+2021-03-09 21:15:34,738 INFO  [org.jboss.as.ejb3] (MSC service thread 1-1) WFLYEJB0482: Strict pool mdb-strict-max-pool is using a max instance size of 48 (per class), which is derived from the number of CPUs on this host.
+2021-03-09 21:15:34,738 INFO  [org.jboss.as.ejb3] (MSC service thread 1-3) WFLYEJB0481: Strict pool slsb-strict-max-pool is using a max instance size of 192 (per class), which is derived from thread worker pool sizing.
+2021-03-09 21:15:34,787 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) WFLYUT0006: Undertow HTTP listener default listening on 127.0.0.1:8080
+2021-03-09 21:15:34,821 INFO  [org.jboss.as.ejb3] (MSC service thread 1-4) WFLYEJB0493: EJB subsystem suspension complete
+2021-03-09 21:15:34,863 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-3) WFLYJCA0001: Bound data source [java:jboss/datasources/ExampleDS]
+2021-03-09 21:15:34,863 INFO  [org.jboss.as.patching] (MSC service thread 1-5) WFLYPAT0050: JBoss EAP cumulative patch ID is: base, one-off patches include: none
+2021-03-09 21:15:34,874 WARN  [org.jboss.as.domain.management.security] (MSC service thread 1-4) WFLYDM0111: Keystore /Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/standalone/configuration/application.keystore not found, it will be auto generated on first use with a self signed certificate for host localhost
+2021-03-09 21:15:34,878 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-8) WFLYDS0013: Started FileSystemDeploymentService for directory /Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/standalone/deployments
+2021-03-09 21:15:34,886 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0027: Starting deployment of "ROOT.war" (runtime-name: "ROOT.war")
+2021-03-09 21:15:34,897 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) WFLYUT0006: Undertow HTTPS listener https listening on 127.0.0.1:8443
+2021-03-09 21:15:35,006 INFO  [org.jboss.ws.common.management] (MSC service thread 1-8) JBWS022052: Starting JBossWS 5.4.2.Final-redhat-00001 (Apache CXF 3.3.7.redhat-00001) 
+2021-03-09 21:15:37,560 ERROR [org.jboss.msc.service.fail] (MSC service thread 1-8) MSC000001: Failed to start service jboss.deployment.unit."ROOT.war".PARSE: org.jboss.msc.service.StartException in service jboss.deployment.unit."ROOT.war".PARSE: WFLYSRV0153: Failed to process phase PARSE of deployment "ROOT.war"
+	at org.jboss.as.server@14.0.1.Final-redhat-00001//org.jboss.as.server.deployment.DeploymentUnitPhaseService.start(DeploymentUnitPhaseService.java:189)
+	at org.jboss.msc@1.4.12.Final-redhat-00001//org.jboss.msc.service.ServiceControllerImpl$StartTask.startService(ServiceControllerImpl.java:1739)
+	at org.jboss.msc@1.4.12.Final-redhat-00001//org.jboss.msc.service.ServiceControllerImpl$StartTask.execute(ServiceControllerImpl.java:1701)
+	at org.jboss.msc@1.4.12.Final-redhat-00001//org.jboss.msc.service.ServiceControllerImpl$ControllerTask.run(ServiceControllerImpl.java:1559)
+	at org.jboss.threads@2.4.0.Final-redhat-00001//org.jboss.threads.ContextClassLoaderSavingRunnable.run(ContextClassLoaderSavingRunnable.java:35)
+	at org.jboss.threads@2.4.0.Final-redhat-00001//org.jboss.threads.EnhancedQueueExecutor.safeRun(EnhancedQueueExecutor.java:1990)
+	at org.jboss.threads@2.4.0.Final-redhat-00001//org.jboss.threads.EnhancedQueueExecutor$ThreadBody.doRunTask(EnhancedQueueExecutor.java:1486)
+	at org.jboss.threads@2.4.0.Final-redhat-00001//org.jboss.threads.EnhancedQueueExecutor$ThreadBody.run(EnhancedQueueExecutor.java:1377)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+Caused by: org.jboss.msc.service.ServiceNotFoundException: service jboss.ejb.default-resource-adapter-name-service not found
+	at org.jboss.msc@1.4.12.Final-redhat-00001//org.jboss.msc.service.ServiceContainerImpl.getRequiredService(ServiceContainerImpl.java:663)
+	at org.jboss.as.ejb3@7.4.0.Beta-redhat-00001//org.jboss.as.ejb3.deployment.processors.MessageDrivenComponentDescriptionFactory.getDefaultResourceAdapterName(MessageDrivenComponentDescriptionFactory.java:257)
+	at org.jboss.as.ejb3@7.4.0.Beta-redhat-00001//org.jboss.as.ejb3.deployment.processors.MessageDrivenComponentDescriptionFactory.processMessageBeans(MessageDrivenComponentDescriptionFactory.java:156)
+	at org.jboss.as.ejb3@7.4.0.Beta-redhat-00001//org.jboss.as.ejb3.deployment.processors.MessageDrivenComponentDescriptionFactory.processAnnotations(MessageDrivenComponentDescriptionFactory.java:83)
+	at org.jboss.as.ejb3@7.4.0.Beta-redhat-00001//org.jboss.as.ejb3.deployment.processors.AnnotatedEJBComponentDescriptionDeploymentUnitProcessor.processAnnotations(AnnotatedEJBComponentDescriptionDeploymentUnitProcessor.java:150)
+	at org.jboss.as.ejb3@7.4.0.Beta-redhat-00001//org.jboss.as.ejb3.deployment.processors.AnnotatedEJBComponentDescriptionDeploymentUnitProcessor.deploy(AnnotatedEJBComponentDescriptionDeploymentUnitProcessor.java:82)
+	at org.jboss.as.server@14.0.1.Final-redhat-00001//org.jboss.as.server.deployment.DeploymentUnitPhaseService.start(DeploymentUnitPhaseService.java:182)
+	... 8 more
+
+2021-03-09 21:15:37,563 ERROR [org.jboss.as.controller.management-operation] (Controller Boot Thread) WFLYCTL0013: Operation ("deploy") failed - address: ([("deployment" => "ROOT.war")]) - failure description: {"WFLYCTL0080: Failed services" => {"jboss.deployment.unit.\"ROOT.war\".PARSE" => "WFLYSRV0153: Failed to process phase PARSE of deployment \"ROOT.war\"
+    Caused by: org.jboss.msc.service.ServiceNotFoundException: service jboss.ejb.default-resource-adapter-name-service not found"}}
+2021-03-09 21:15:37,616 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 42) WFLYSRV0010: Deployed "ROOT.war" (runtime-name : "ROOT.war")
+2021-03-09 21:15:37,617 INFO  [org.jboss.as.controller] (Controller Boot Thread) WFLYCTL0183: Service status report
+WFLYCTL0186:   Services which failed to start:      service jboss.deployment.unit."ROOT.war".PARSE: WFLYSRV0153: Failed to process phase PARSE of deployment "ROOT.war"
+
+2021-03-09 21:15:45,337 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0212: Resuming server
+2021-03-09 21:15:45,338 ERROR [org.jboss.as] (Controller Boot Thread) WFLYSRV0026: JBoss EAP 7.4.0.Beta (WildFly Core 14.0.1.Final-redhat-00001) started (with errors) in 15477ms - Started 319 of 559 services (1 services failed or missing dependencies, 344 services are lazy, passive or on-demand)
+2021-03-09 21:15:45,340 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0060: Http management interface listening on http://127.0.0.1:9990/management
+2021-03-09 21:15:45,340 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0051: Admin console listening on http://127.0.0.1:9990
+2021-03-09 21:17:21,354 INFO  [org.jboss.as.server] (Thread-6) WFLYSRV0272: Suspending server
+2021-03-09 21:17:21,357 INFO  [org.jboss.as.ejb3] (Thread-6) WFLYEJB0493: EJB subsystem suspension complete
+2021-03-09 21:17:21,358 INFO  [org.jboss.as.server] (Thread-6) WFLYSRV0220: Server shutdown has been requested via an OS signal
+2021-03-09 21:17:21,367 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-2) WFLYJCA0010: Unbound data source [java:jboss/datasources/ExampleDS]
+2021-03-09 21:17:21,367 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-2) WFLYMAIL0002: Unbound mail session [java:jboss/mail/Default]
+2021-03-09 21:17:21,367 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) WFLYUT0019: Host default-host stopping
+2021-03-09 21:17:21,368 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0008: Undertow HTTPS listener https suspending
+2021-03-09 21:17:21,368 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0008: Undertow HTTP listener default suspending
+2021-03-09 21:17:21,369 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-5) WFLYJCA0019: Stopped Driver service with driver-name = h2
+2021-03-09 21:17:21,372 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0007: Undertow HTTPS listener https stopped, was bound to 127.0.0.1:8443
+2021-03-09 21:17:21,372 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0007: Undertow HTTP listener default stopped, was bound to 127.0.0.1:8080
+2021-03-09 21:17:21,373 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0004: Undertow 2.2.3.SP1-redhat-00001 stopping
+2021-03-09 21:17:21,841 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0028: Stopped deployment ROOT.war (runtime-name: ROOT.war) in 479ms
+2021-03-09 21:17:21,844 INFO  [org.jboss.as] (MSC service thread 1-7) WFLYSRV0050: JBoss EAP 7.4.0.Beta (WildFly Core 14.0.1.Final-redhat-00001) stopped in 482ms
+2021-03-09 21:18:55,584 INFO  [org.jboss.modules] (main) JBoss Modules version 1.11.0.Final-redhat-00001
+2021-03-09 21:18:56,182 INFO  [org.wildfly.security] (main) ELY00001: WildFly Elytron version 1.14.1.Final-redhat-00001
+2021-03-09 21:18:56,647 INFO  [org.apache.sshd.common.io.DefaultIoServiceFactoryFactory] (main) No detected/configured IoServiceFactoryFactory using Nio2ServiceFactoryFactory
+2021-03-09 21:18:57,662 INFO  [org.jboss.as.server] (main) WFLYSRV0278: The configuration history is managed through Git
+2021-03-09 21:18:57,673 INFO  [org.jboss.msc] (main) JBoss MSC version 1.4.12.Final-redhat-00001
+2021-03-09 21:18:57,678 INFO  [org.jboss.threads] (main) JBoss Threads version 2.4.0.Final-redhat-00001
+2021-03-09 21:18:57,749 INFO  [org.jboss.as] (MSC service thread 1-2) WFLYSRV0049: JBoss EAP 7.4.0.Beta (WildFly Core 14.0.1.Final-redhat-00001) starting
+2021-03-09 21:18:57,751 DEBUG [org.jboss.as.config] (MSC service thread 1-2) Configured system properties:
+	[Standalone] = 
+	file.encoding = UTF-8
+	file.separator = /
+	ftp.nonProxyHosts = local|*.local|169.254/16|*.169.254/16|lx.astxsvc.com|*.lx.astxsvc.com|localhost|*.localhost|127.0.0.1:21300|*.127.0.0.1:21300
+	http.nonProxyHosts = local|*.local|169.254/16|*.169.254/16|lx.astxsvc.com|*.lx.astxsvc.com|localhost|*.localhost|127.0.0.1:21300|*.127.0.0.1:21300
+	java.awt.headless = true
+	java.class.path = /Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/jboss-modules.jar
+	java.class.version = 58.0
+	java.home = /Library/Java/JavaVirtualMachines/openjdk-14.0.1.jdk/Contents/Home
+	java.io.tmpdir = /var/folders/3g/g5jgkj0553s5dkwc3zw_p7_m0000gn/T/
+	java.library.path = /Users/danieloh/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+	java.net.preferIPv4Stack = true
+	java.runtime.name = OpenJDK Runtime Environment
+	java.runtime.version = 14.0.1+7
+	java.specification.name = Java Platform API Specification
+	java.specification.vendor = Oracle Corporation
+	java.specification.version = 14
+	java.util.logging.manager = org.jboss.logmanager.LogManager
+	java.vendor = Oracle Corporation
+	java.vendor.url = https://java.oracle.com/
+	java.vendor.url.bug = https://bugreport.java.com/bugreport/
+	java.version = 14.0.1
+	java.version.date = 2020-04-14
+	java.vm.compressedOopsMode = Zero based
+	java.vm.info = mixed mode, sharing
+	java.vm.name = OpenJDK 64-Bit Server VM
+	java.vm.specification.name = Java Virtual Machine Specification
+	java.vm.specification.vendor = Oracle Corporation
+	java.vm.specification.version = 14
+	java.vm.vendor = Oracle Corporation
+	java.vm.version = 14.0.1+7
+	javax.management.builder.initial = org.jboss.as.jmx.PluggableMBeanServerBuilder
+	jboss.home.dir = /Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta
+	jboss.host.name = daniels-macbook-pro
+	jboss.modules.dir = /Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/modules
+	jboss.modules.system.pkgs = org.jboss.byteman
+	jboss.node.name = daniels-macbook-pro
+	jboss.qualified.host.name = daniels-macbook-pro
+	jboss.server.base.dir = /Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/standalone
+	jboss.server.config.dir = /Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/standalone/configuration
+	jboss.server.data.dir = /Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/standalone/data
+	jboss.server.deploy.dir = /Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/standalone/data/content
+	jboss.server.log.dir = /Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/standalone/log
+	jboss.server.name = daniels-macbook-pro
+	jboss.server.persist.config = true
+	jboss.server.temp.dir = /Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/standalone/tmp
+	jdk.debug = release
+	line.separator = 
+
+	logging.configuration = file:/Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/standalone/configuration/logging.properties
+	module.path = /Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/modules
+	org.jboss.boot.log.file = /Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/standalone/log/server.log
+	org.jboss.resolver.warning = true
+	os.arch = x86_64
+	os.name = Mac OS X
+	os.version = 10.16
+	path.separator = :
+	socksNonProxyHosts = local|*.local|169.254/16|*.169.254/16|lx.astxsvc.com|*.lx.astxsvc.com|localhost|*.localhost|127.0.0.1:21300|*.127.0.0.1:21300
+	sun.arch.data.model = 64
+	sun.boot.library.path = /Library/Java/JavaVirtualMachines/openjdk-14.0.1.jdk/Contents/Home/lib
+	sun.cpu.endian = little
+	sun.io.unicode.encoding = UnicodeBig
+	sun.java.command = /Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/jboss-modules.jar -mp /Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/modules org.jboss.as.standalone -Djboss.home.dir=/Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta -Djboss.server.base.dir=/Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/standalone --git-repo=git@github.com:danieloh30/eap-gitssh-demo.git --git-branch=main --git-auth=file:///Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/wildfly-config.xml
+	sun.java.launcher = SUN_STANDARD
+	sun.jnu.encoding = UTF-8
+	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+	user.country = US
+	user.dir = /Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta
+	user.home = /Users/danieloh
+	user.language = en
+	user.name = danieloh
+	user.timezone = America/New_York
+2021-03-09 21:18:57,754 DEBUG [org.jboss.as.config] (MSC service thread 1-2) VM Arguments: -D[Standalone] -Xlog:gc*:file=/Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/standalone/log/gc.log:time,uptimemillis:filecount=5,filesize=3M -Xms1303m -Xmx1303m -XX:MetaspaceSize=96M -XX:MaxMetaspaceSize=256m -Djava.net.preferIPv4Stack=true -Djboss.modules.system.pkgs=org.jboss.byteman -Djava.awt.headless=true --add-exports=java.base/sun.nio.ch=ALL-UNNAMED --add-exports=jdk.unsupported/sun.misc=ALL-UNNAMED --add-exports=jdk.unsupported/sun.reflect=ALL-UNNAMED -Dorg.jboss.boot.log.file=/Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/standalone/log/server.log -Dlogging.configuration=file:/Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/standalone/configuration/logging.properties 
+2021-03-09 21:18:58,814 INFO  [org.jboss.as.controller.management-deprecated] (Controller Boot Thread) WFLYCTL0028: Attribute 'security-realm' in the resource at address '/core-service=management/management-interface=http-interface' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+2021-03-09 21:18:58,831 INFO  [org.jboss.as.controller.management-deprecated] (ServerService Thread Pool -- 4) WFLYCTL0028: Attribute 'security-realm' in the resource at address '/subsystem=undertow/server=default-server/https-listener=https' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+2021-03-09 21:18:58,896 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0039: Creating http management service using socket-binding (management-http)
+2021-03-09 21:18:58,915 INFO  [org.xnio] (MSC service thread 1-6) XNIO version 3.8.4.Final-redhat-00001
+2021-03-09 21:18:58,920 INFO  [org.xnio.nio] (MSC service thread 1-6) XNIO NIO Implementation Version 3.8.4.Final-redhat-00001
+2021-03-09 21:18:58,938 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 50) WFLYCLINF0001: Activating Infinispan subsystem.
+2021-03-09 21:18:58,945 INFO  [org.wildfly.extension.health] (ServerService Thread Pool -- 49) WFLYHEALTH0001: Activating Base Health Subsystem
+2021-03-09 21:18:58,947 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 68) WFLYTX0013: The node-identifier attribute on the /subsystem=transactions is set to the default value. This is a danger for environments running multiple servers. Please make sure the attribute value is unique.
+2021-03-09 21:18:58,948 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 51) WFLYIO001: Worker 'default' has auto-configured to 24 IO threads with 192 max task threads based on your 12 available processors
+2021-03-09 21:18:58,953 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 60) WFLYNAM0001: Activating Naming Subsystem
+2021-03-09 21:18:58,954 INFO  [org.jboss.as.jaxrs] (ServerService Thread Pool -- 52) WFLYRS0016: RESTEasy version 3.14.0.Final-redhat-00001
+2021-03-09 21:18:58,954 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 66) WFLYSEC0002: Activating Security Subsystem
+2021-03-09 21:18:58,955 INFO  [org.wildfly.extension.metrics] (ServerService Thread Pool -- 59) WFLYMETRICS0001: Activating Base Metrics Subsystem
+2021-03-09 21:18:58,960 INFO  [org.jboss.as.jsf] (ServerService Thread Pool -- 57) WFLYJSF0007: Activated the following JSF Implementations: [main]
+2021-03-09 21:18:58,961 INFO  [org.jboss.as.security] (MSC service thread 1-4) WFLYSEC0001: Current PicketBox version=5.0.3.Final-redhat-00007
+2021-03-09 21:18:58,961 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 70) WFLYWS0002: Activating WebServices Extension
+2021-03-09 21:18:58,970 INFO  [org.jboss.as.connector] (MSC service thread 1-5) WFLYJCA0009: Starting JCA Subsystem (WildFly/IronJacamar 1.4.25.Final-redhat-00001)
+2021-03-09 21:18:58,980 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 41) WFLYJCA0004: Deploying JDBC-compliant driver class org.h2.Driver (version 1.4)
+2021-03-09 21:18:58,993 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-2) WFLYJCA0018: Started Driver service with driver-name = h2
+2021-03-09 21:18:58,997 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0003: Undertow 2.2.3.SP1-redhat-00001 starting
+2021-03-09 21:18:59,002 INFO  [org.jboss.as.naming] (MSC service thread 1-6) WFLYNAM0003: Starting Naming Service
+2021-03-09 21:18:59,003 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-2) WFLYMAIL0001: Bound mail session [java:jboss/mail/Default]
+2021-03-09 21:18:59,005 INFO  [org.jboss.remoting] (MSC service thread 1-8) JBoss Remoting version 5.0.20.Final-redhat-00001
+2021-03-09 21:18:59,041 WARN  [org.wildfly.extension.elytron] (MSC service thread 1-8) WFLYELY00023: KeyStore file '/Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/standalone/configuration/application.keystore' does not exist. Used blank.
+2021-03-09 21:18:59,058 WARN  [org.wildfly.extension.elytron] (MSC service thread 1-8) WFLYELY01084: KeyStore /Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/standalone/configuration/application.keystore not found, it will be auto generated on first use with a self-signed certificate for host localhost
+2021-03-09 21:18:59,071 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 69) WFLYUT0014: Creating file handler for path '/Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/welcome-content' with options [directory-listing: 'false', follow-symlink: 'false', case-sensitive: 'true', safe-symlink-paths: '[]']
+2021-03-09 21:18:59,086 INFO  [org.jboss.as.ejb3] (MSC service thread 1-7) WFLYEJB0482: Strict pool mdb-strict-max-pool is using a max instance size of 48 (per class), which is derived from the number of CPUs on this host.
+2021-03-09 21:18:59,086 INFO  [org.jboss.as.ejb3] (MSC service thread 1-6) WFLYEJB0481: Strict pool slsb-strict-max-pool is using a max instance size of 192 (per class), which is derived from thread worker pool sizing.
+2021-03-09 21:18:59,087 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0012: Started server default-server.
+2021-03-09 21:18:59,089 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0018: Host default-host starting
+2021-03-09 21:18:59,148 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) WFLYUT0006: Undertow HTTP listener default listening on 127.0.0.1:8080
+2021-03-09 21:18:59,180 INFO  [org.jboss.as.ejb3] (MSC service thread 1-4) WFLYEJB0493: EJB subsystem suspension complete
+2021-03-09 21:18:59,222 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-6) WFLYJCA0001: Bound data source [java:jboss/datasources/ExampleDS]
+2021-03-09 21:18:59,244 INFO  [org.jboss.as.patching] (MSC service thread 1-7) WFLYPAT0050: JBoss EAP cumulative patch ID is: base, one-off patches include: none
+2021-03-09 21:18:59,253 WARN  [org.jboss.as.domain.management.security] (MSC service thread 1-2) WFLYDM0111: Keystore /Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/standalone/configuration/application.keystore not found, it will be auto generated on first use with a self signed certificate for host localhost
+2021-03-09 21:18:59,257 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-3) WFLYDS0013: Started FileSystemDeploymentService for directory /Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/standalone/deployments
+2021-03-09 21:18:59,280 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0006: Undertow HTTPS listener https listening on 127.0.0.1:8443
+2021-03-09 21:18:59,360 INFO  [org.jboss.ws.common.management] (MSC service thread 1-6) JBWS022052: Starting JBossWS 5.4.2.Final-redhat-00001 (Apache CXF 3.3.7.redhat-00001) 
+2021-03-09 21:18:59,446 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0212: Resuming server
+2021-03-09 21:18:59,448 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0025: JBoss EAP 7.4.0.Beta (WildFly Core 14.0.1.Final-redhat-00001) started in 4167ms - Started 316 of 555 services (344 services are lazy, passive or on-demand)
+2021-03-09 21:18:59,450 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0060: Http management interface listening on http://127.0.0.1:9990/management
+2021-03-09 21:18:59,450 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0051: Admin console listening on http://127.0.0.1:9990
+2021-03-09 21:23:56,137 INFO  [org.jboss.as.server] (Thread-6) WFLYSRV0272: Suspending server
+2021-03-09 21:23:56,139 INFO  [org.jboss.as.ejb3] (Thread-6) WFLYEJB0493: EJB subsystem suspension complete
+2021-03-09 21:23:56,141 INFO  [org.jboss.as.server] (Thread-6) WFLYSRV0220: Server shutdown has been requested via an OS signal
+2021-03-09 21:23:56,149 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-1) WFLYJCA0010: Unbound data source [java:jboss/datasources/ExampleDS]
+2021-03-09 21:23:56,149 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-3) WFLYMAIL0002: Unbound mail session [java:jboss/mail/Default]
+2021-03-09 21:23:56,149 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) WFLYUT0019: Host default-host stopping
+2021-03-09 21:23:56,150 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) WFLYUT0008: Undertow HTTPS listener https suspending
+2021-03-09 21:23:56,150 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0008: Undertow HTTP listener default suspending
+2021-03-09 21:23:56,151 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0007: Undertow HTTP listener default stopped, was bound to 127.0.0.1:8080
+2021-03-09 21:23:56,151 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) WFLYUT0007: Undertow HTTPS listener https stopped, was bound to 127.0.0.1:8443
+2021-03-09 21:23:56,151 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0004: Undertow 2.2.3.SP1-redhat-00001 stopping
+2021-03-09 21:23:56,153 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-4) WFLYJCA0019: Stopped Driver service with driver-name = h2
+2021-03-09 21:23:56,158 INFO  [org.jboss.as] (MSC service thread 1-4) WFLYSRV0050: JBoss EAP 7.4.0.Beta (WildFly Core 14.0.1.Final-redhat-00001) stopped in 14ms
+2021-03-09 21:24:12,762 INFO  [org.jboss.modules] (main) JBoss Modules version 1.11.0.Final-redhat-00001
+2021-03-09 21:24:13,296 INFO  [org.wildfly.security] (main) ELY00001: WildFly Elytron version 1.14.1.Final-redhat-00001
+2021-03-09 21:24:13,705 INFO  [org.apache.sshd.common.io.DefaultIoServiceFactoryFactory] (main) No detected/configured IoServiceFactoryFactory using Nio2ServiceFactoryFactory
+2021-03-09 21:24:14,692 INFO  [org.jboss.as.server] (main) WFLYSRV0278: The configuration history is managed through Git
+2021-03-09 21:24:14,702 INFO  [org.jboss.msc] (main) JBoss MSC version 1.4.12.Final-redhat-00001
+2021-03-09 21:24:14,707 INFO  [org.jboss.threads] (main) JBoss Threads version 2.4.0.Final-redhat-00001
+2021-03-09 21:24:14,777 INFO  [org.jboss.as] (MSC service thread 1-2) WFLYSRV0049: JBoss EAP 7.4.0.Beta (WildFly Core 14.0.1.Final-redhat-00001) starting
+2021-03-09 21:24:14,778 DEBUG [org.jboss.as.config] (MSC service thread 1-2) Configured system properties:
+	[Standalone] = 
+	file.encoding = UTF-8
+	file.separator = /
+	ftp.nonProxyHosts = local|*.local|169.254/16|*.169.254/16|lx.astxsvc.com|*.lx.astxsvc.com|localhost|*.localhost|127.0.0.1:21300|*.127.0.0.1:21300
+	http.nonProxyHosts = local|*.local|169.254/16|*.169.254/16|lx.astxsvc.com|*.lx.astxsvc.com|localhost|*.localhost|127.0.0.1:21300|*.127.0.0.1:21300
+	java.awt.headless = true
+	java.class.path = /Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/jboss-modules.jar
+	java.class.version = 58.0
+	java.home = /Library/Java/JavaVirtualMachines/openjdk-14.0.1.jdk/Contents/Home
+	java.io.tmpdir = /var/folders/3g/g5jgkj0553s5dkwc3zw_p7_m0000gn/T/
+	java.library.path = /Users/danieloh/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+	java.net.preferIPv4Stack = true
+	java.runtime.name = OpenJDK Runtime Environment
+	java.runtime.version = 14.0.1+7
+	java.specification.name = Java Platform API Specification
+	java.specification.vendor = Oracle Corporation
+	java.specification.version = 14
+	java.util.logging.manager = org.jboss.logmanager.LogManager
+	java.vendor = Oracle Corporation
+	java.vendor.url = https://java.oracle.com/
+	java.vendor.url.bug = https://bugreport.java.com/bugreport/
+	java.version = 14.0.1
+	java.version.date = 2020-04-14
+	java.vm.compressedOopsMode = Zero based
+	java.vm.info = mixed mode, sharing
+	java.vm.name = OpenJDK 64-Bit Server VM
+	java.vm.specification.name = Java Virtual Machine Specification
+	java.vm.specification.vendor = Oracle Corporation
+	java.vm.specification.version = 14
+	java.vm.vendor = Oracle Corporation
+	java.vm.version = 14.0.1+7
+	javax.management.builder.initial = org.jboss.as.jmx.PluggableMBeanServerBuilder
+	jboss.home.dir = /Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta
+	jboss.host.name = daniels-macbook-pro
+	jboss.modules.dir = /Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/modules
+	jboss.modules.system.pkgs = org.jboss.byteman
+	jboss.node.name = daniels-macbook-pro
+	jboss.qualified.host.name = daniels-macbook-pro
+	jboss.server.base.dir = /Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/standalone
+	jboss.server.config.dir = /Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/standalone/configuration
+	jboss.server.data.dir = /Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/standalone/data
+	jboss.server.deploy.dir = /Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/standalone/data/content
+	jboss.server.log.dir = /Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/standalone/log
+	jboss.server.name = daniels-macbook-pro
+	jboss.server.persist.config = true
+	jboss.server.temp.dir = /Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/standalone/tmp
+	jdk.debug = release
+	line.separator = 
+
+	logging.configuration = file:/Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/standalone/configuration/logging.properties
+	module.path = /Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/modules
+	org.jboss.boot.log.file = /Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/standalone/log/server.log
+	org.jboss.resolver.warning = true
+	os.arch = x86_64
+	os.name = Mac OS X
+	os.version = 10.16
+	path.separator = :
+	socksNonProxyHosts = local|*.local|169.254/16|*.169.254/16|lx.astxsvc.com|*.lx.astxsvc.com|localhost|*.localhost|127.0.0.1:21300|*.127.0.0.1:21300
+	sun.arch.data.model = 64
+	sun.boot.library.path = /Library/Java/JavaVirtualMachines/openjdk-14.0.1.jdk/Contents/Home/lib
+	sun.cpu.endian = little
+	sun.io.unicode.encoding = UnicodeBig
+	sun.java.command = /Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/jboss-modules.jar -mp /Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/modules org.jboss.as.standalone -Djboss.home.dir=/Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta -Djboss.server.base.dir=/Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/standalone --git-repo=git@github.com:danieloh30/eap-gitssh-demo.git --git-branch=main --git-auth=file:///Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/wildfly-config.xml
+	sun.java.launcher = SUN_STANDARD
+	sun.jnu.encoding = UTF-8
+	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+	user.country = US
+	user.dir = /Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta
+	user.home = /Users/danieloh
+	user.language = en
+	user.name = danieloh
+	user.timezone = America/New_York
+2021-03-09 21:24:14,780 DEBUG [org.jboss.as.config] (MSC service thread 1-2) VM Arguments: -D[Standalone] -Xlog:gc*:file=/Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/standalone/log/gc.log:time,uptimemillis:filecount=5,filesize=3M -Xms1303m -Xmx1303m -XX:MetaspaceSize=96M -XX:MaxMetaspaceSize=256m -Djava.net.preferIPv4Stack=true -Djboss.modules.system.pkgs=org.jboss.byteman -Djava.awt.headless=true --add-exports=java.base/sun.nio.ch=ALL-UNNAMED --add-exports=jdk.unsupported/sun.misc=ALL-UNNAMED --add-exports=jdk.unsupported/sun.reflect=ALL-UNNAMED -Dorg.jboss.boot.log.file=/Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/standalone/log/server.log -Dlogging.configuration=file:/Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/standalone/configuration/logging.properties 
+2021-03-09 21:24:15,691 INFO  [org.jboss.as.controller.management-deprecated] (Controller Boot Thread) WFLYCTL0028: Attribute 'security-realm' in the resource at address '/core-service=management/management-interface=http-interface' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+2021-03-09 21:24:15,716 INFO  [org.jboss.as.controller.management-deprecated] (ServerService Thread Pool -- 14) WFLYCTL0028: Attribute 'security-realm' in the resource at address '/subsystem=undertow/server=default-server/https-listener=https' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+2021-03-09 21:24:15,787 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0039: Creating http management service using socket-binding (management-http)
+2021-03-09 21:24:15,800 INFO  [org.xnio] (MSC service thread 1-1) XNIO version 3.8.4.Final-redhat-00001
+2021-03-09 21:24:15,806 INFO  [org.xnio.nio] (MSC service thread 1-1) XNIO NIO Implementation Version 3.8.4.Final-redhat-00001
+2021-03-09 21:24:15,825 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 50) WFLYCLINF0001: Activating Infinispan subsystem.
+2021-03-09 21:24:15,825 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 51) WFLYIO001: Worker 'default' has auto-configured to 24 IO threads with 192 max task threads based on your 12 available processors
+2021-03-09 21:24:15,832 INFO  [org.wildfly.extension.health] (ServerService Thread Pool -- 49) WFLYHEALTH0001: Activating Base Health Subsystem
+2021-03-09 21:24:15,832 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 68) WFLYTX0013: The node-identifier attribute on the /subsystem=transactions is set to the default value. This is a danger for environments running multiple servers. Please make sure the attribute value is unique.
+2021-03-09 21:24:15,839 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 60) WFLYNAM0001: Activating Naming Subsystem
+2021-03-09 21:24:15,840 INFO  [org.jboss.as.jaxrs] (ServerService Thread Pool -- 52) WFLYRS0016: RESTEasy version 3.14.0.Final-redhat-00001
+2021-03-09 21:24:15,844 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 70) WFLYWS0002: Activating WebServices Extension
+2021-03-09 21:24:15,846 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 66) WFLYSEC0002: Activating Security Subsystem
+2021-03-09 21:24:15,846 INFO  [org.jboss.as.jsf] (ServerService Thread Pool -- 57) WFLYJSF0007: Activated the following JSF Implementations: [main]
+2021-03-09 21:24:15,849 INFO  [org.wildfly.extension.metrics] (ServerService Thread Pool -- 59) WFLYMETRICS0001: Activating Base Metrics Subsystem
+2021-03-09 21:24:15,854 INFO  [org.jboss.as.security] (MSC service thread 1-8) WFLYSEC0001: Current PicketBox version=5.0.3.Final-redhat-00007
+2021-03-09 21:24:15,856 INFO  [org.jboss.as.connector] (MSC service thread 1-1) WFLYJCA0009: Starting JCA Subsystem (WildFly/IronJacamar 1.4.25.Final-redhat-00001)
+2021-03-09 21:24:15,867 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) WFLYUT0003: Undertow 2.2.3.SP1-redhat-00001 starting
+2021-03-09 21:24:15,881 INFO  [org.jboss.as.naming] (MSC service thread 1-7) WFLYNAM0003: Starting Naming Service
+2021-03-09 21:24:15,883 INFO  [org.jboss.remoting] (MSC service thread 1-5) JBoss Remoting version 5.0.20.Final-redhat-00001
+2021-03-09 21:24:15,887 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-1) WFLYMAIL0001: Bound mail session [java:jboss/mail/Default]
+2021-03-09 21:24:15,891 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 41) WFLYJCA0004: Deploying JDBC-compliant driver class org.h2.Driver (version 1.4)
+2021-03-09 21:24:15,895 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-1) WFLYJCA0018: Started Driver service with driver-name = h2
+2021-03-09 21:24:15,937 WARN  [org.wildfly.extension.elytron] (MSC service thread 1-7) WFLYELY00023: KeyStore file '/Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/standalone/configuration/application.keystore' does not exist. Used blank.
+2021-03-09 21:24:15,951 WARN  [org.wildfly.extension.elytron] (MSC service thread 1-7) WFLYELY01084: KeyStore /Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/standalone/configuration/application.keystore not found, it will be auto generated on first use with a self-signed certificate for host localhost
+2021-03-09 21:24:15,957 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 69) WFLYUT0014: Creating file handler for path '/Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/welcome-content' with options [directory-listing: 'false', follow-symlink: 'false', case-sensitive: 'true', safe-symlink-paths: '[]']
+2021-03-09 21:24:15,971 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) WFLYUT0012: Started server default-server.
+2021-03-09 21:24:15,973 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0018: Host default-host starting
+2021-03-09 21:24:15,979 INFO  [org.jboss.as.ejb3] (MSC service thread 1-5) WFLYEJB0481: Strict pool slsb-strict-max-pool is using a max instance size of 192 (per class), which is derived from thread worker pool sizing.
+2021-03-09 21:24:15,979 INFO  [org.jboss.as.ejb3] (MSC service thread 1-6) WFLYEJB0482: Strict pool mdb-strict-max-pool is using a max instance size of 48 (per class), which is derived from the number of CPUs on this host.
+2021-03-09 21:24:16,036 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) WFLYUT0006: Undertow HTTP listener default listening on 127.0.0.1:8080
+2021-03-09 21:24:16,064 INFO  [org.jboss.as.ejb3] (MSC service thread 1-8) WFLYEJB0493: EJB subsystem suspension complete
+2021-03-09 21:24:16,098 INFO  [org.jboss.as.patching] (MSC service thread 1-4) WFLYPAT0050: JBoss EAP cumulative patch ID is: base, one-off patches include: none
+2021-03-09 21:24:16,110 WARN  [org.jboss.as.domain.management.security] (MSC service thread 1-5) WFLYDM0111: Keystore /Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/standalone/configuration/application.keystore not found, it will be auto generated on first use with a self signed certificate for host localhost
+2021-03-09 21:24:16,110 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-7) WFLYJCA0001: Bound data source [java:jboss/datasources/ExampleDS]
+2021-03-09 21:24:16,113 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-2) WFLYDS0013: Started FileSystemDeploymentService for directory /Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/standalone/deployments
+2021-03-09 21:24:16,132 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0006: Undertow HTTPS listener https listening on 127.0.0.1:8443
+2021-03-09 21:24:16,196 INFO  [org.jboss.ws.common.management] (MSC service thread 1-7) JBWS022052: Starting JBossWS 5.4.2.Final-redhat-00001 (Apache CXF 3.3.7.redhat-00001) 
+2021-03-09 21:24:16,271 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0212: Resuming server
+2021-03-09 21:24:16,273 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0025: JBoss EAP 7.4.0.Beta (WildFly Core 14.0.1.Final-redhat-00001) started in 3828ms - Started 316 of 555 services (344 services are lazy, passive or on-demand)
+2021-03-09 21:24:16,275 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0060: Http management interface listening on http://127.0.0.1:9990/management
+2021-03-09 21:24:16,275 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0051: Admin console listening on http://127.0.0.1:9990
+2021-03-09 21:24:25,646 INFO  [org.jboss.as.server] (Thread-6) WFLYSRV0272: Suspending server
+2021-03-09 21:24:25,647 INFO  [org.jboss.as.ejb3] (Thread-6) WFLYEJB0493: EJB subsystem suspension complete
+2021-03-09 21:24:25,648 INFO  [org.jboss.as.server] (Thread-6) WFLYSRV0220: Server shutdown has been requested via an OS signal
+2021-03-09 21:24:25,655 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-4) WFLYJCA0010: Unbound data source [java:jboss/datasources/ExampleDS]
+2021-03-09 21:24:25,656 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0019: Host default-host stopping
+2021-03-09 21:24:25,656 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-8) WFLYMAIL0002: Unbound mail session [java:jboss/mail/Default]
+2021-03-09 21:24:25,657 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0008: Undertow HTTPS listener https suspending
+2021-03-09 21:24:25,657 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0008: Undertow HTTP listener default suspending
+2021-03-09 21:24:25,657 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-1) WFLYJCA0019: Stopped Driver service with driver-name = h2
+2021-03-09 21:24:25,657 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0007: Undertow HTTPS listener https stopped, was bound to 127.0.0.1:8443
+2021-03-09 21:24:25,658 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0007: Undertow HTTP listener default stopped, was bound to 127.0.0.1:8080
+2021-03-09 21:24:25,659 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0004: Undertow 2.2.3.SP1-redhat-00001 stopping
+2021-03-09 21:24:25,668 INFO  [org.jboss.as] (MSC service thread 1-8) WFLYSRV0050: JBoss EAP 7.4.0.Beta (WildFly Core 14.0.1.Final-redhat-00001) stopped in 17ms
+2021-03-09 21:25:29,428 INFO  [org.jboss.modules] (main) JBoss Modules version 1.11.0.Final-redhat-00001
+2021-03-09 21:25:29,899 ERROR [org.jboss.as.server] (main) WFLYSRV0271: Git error: ELY01139: Failed to create credential store
+	at file:///Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/wildfly-config.xml:5:9: org.wildfly.client.config.ConfigXMLParseException: ELY01139: Failed to create credential store
+	at file:///Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/wildfly-config.xml:5:9
+	at org.wildfly.security.elytron-private@1.14.1.Final-redhat-00001//org.wildfly.security.auth.client.CredentialStoreFactory.get(CredentialStoreFactory.java:90)
+	at org.wildfly.security.elytron-private@1.14.1.Final-redhat-00001//org.wildfly.security.auth.client.CredentialStoreFactory.get(CredentialStoreFactory.java:41)
+	at org.wildfly.security.elytron-private@1.14.1.Final-redhat-00001//org.wildfly.security.auth.client.ElytronXmlParser.parseAuthenticationClientType(ElytronXmlParser.java:388)
+	at org.wildfly.security.elytron-private@1.14.1.Final-redhat-00001//org.wildfly.security.auth.client.ElytronXmlParser.parseAuthenticationClientConfiguration(ElytronXmlParser.java:261)
+	at org.wildfly.security.elytron-private@1.14.1.Final-redhat-00001//org.wildfly.security.auth.client.ElytronXmlParser.parseAuthenticationClientConfiguration(ElytronXmlParser.java:225)
+	at org.jboss.as.server@14.0.1.Final-redhat-00001//org.jboss.as.server.controller.git.ElytronClientCredentialsProvider.<init>(ElytronClientCredentialsProvider.java:48)
+	at org.jboss.as.server@14.0.1.Final-redhat-00001//org.jboss.as.server.controller.git.GitRepository.<init>(GitRepository.java:84)
+	at org.jboss.as.server@14.0.1.Final-redhat-00001//org.jboss.as.server.ServerEnvironment.<init>(ServerEnvironment.java:528)
+	at org.jboss.as.server@14.0.1.Final-redhat-00001//org.jboss.as.server.Main.determineEnvironment(Main.java:388)
+	at org.jboss.as.server@14.0.1.Final-redhat-00001//org.jboss.as.server.Main.main(Main.java:96)
+	at org.jboss.modules.Module.run(Module.java:353)
+	at org.jboss.modules.Module.run(Module.java:321)
+	at org.jboss.modules.Main.main(Main.java:617)
+Caused by: org.wildfly.security.credential.store.CredentialStoreException: ELY09518: Automatic storage creation for the Credential Store is disabled "../standalone/configuration/cs_example.cs"
+	at org.wildfly.security.elytron-private@1.14.1.Final-redhat-00001//org.wildfly.security.credential.store.impl.KeyStoreCredentialStore.load(KeyStoreCredentialStore.java:857)
+	at org.wildfly.security.elytron-private@1.14.1.Final-redhat-00001//org.wildfly.security.credential.store.impl.KeyStoreCredentialStore.initialize(KeyStoreCredentialStore.java:223)
+	at org.wildfly.security.elytron-private@1.14.1.Final-redhat-00001//org.wildfly.security.credential.store.CredentialStore.initialize(CredentialStore.java:160)
+	at org.wildfly.security.elytron-private@1.14.1.Final-redhat-00001//org.wildfly.security.auth.client.CredentialStoreFactory.get(CredentialStoreFactory.java:84)
+	... 12 more
+
+2021-03-09 21:25:29,902 FATAL [org.jboss.as.server] (main) WFLYSRV0239: Aborting with exit code 1
+2021-03-09 21:26:36,473 INFO  [org.jboss.modules] (main) JBoss Modules version 1.11.0.Final-redhat-00001
+2021-03-09 21:26:36,974 INFO  [org.wildfly.security] (main) ELY00001: WildFly Elytron version 1.14.1.Final-redhat-00001
+2021-03-09 21:26:37,388 INFO  [org.apache.sshd.common.io.DefaultIoServiceFactoryFactory] (main) No detected/configured IoServiceFactoryFactory using Nio2ServiceFactoryFactory
+2021-03-09 21:26:38,499 INFO  [org.jboss.as.server] (main) WFLYSRV0278: The configuration history is managed through Git
+2021-03-09 21:26:38,509 INFO  [org.jboss.msc] (main) JBoss MSC version 1.4.12.Final-redhat-00001
+2021-03-09 21:26:38,513 INFO  [org.jboss.threads] (main) JBoss Threads version 2.4.0.Final-redhat-00001
+2021-03-09 21:26:38,582 INFO  [org.jboss.as] (MSC service thread 1-2) WFLYSRV0049: JBoss EAP 7.4.0.Beta (WildFly Core 14.0.1.Final-redhat-00001) starting
+2021-03-09 21:26:38,583 DEBUG [org.jboss.as.config] (MSC service thread 1-2) Configured system properties:
+	[Standalone] = 
+	file.encoding = UTF-8
+	file.separator = /
+	ftp.nonProxyHosts = local|*.local|169.254/16|*.169.254/16|lx.astxsvc.com|*.lx.astxsvc.com|localhost|*.localhost|127.0.0.1:21300|*.127.0.0.1:21300
+	http.nonProxyHosts = local|*.local|169.254/16|*.169.254/16|lx.astxsvc.com|*.lx.astxsvc.com|localhost|*.localhost|127.0.0.1:21300|*.127.0.0.1:21300
+	java.awt.headless = true
+	java.class.path = /Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/jboss-modules.jar
+	java.class.version = 58.0
+	java.home = /Library/Java/JavaVirtualMachines/openjdk-14.0.1.jdk/Contents/Home
+	java.io.tmpdir = /var/folders/3g/g5jgkj0553s5dkwc3zw_p7_m0000gn/T/
+	java.library.path = /Users/danieloh/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+	java.net.preferIPv4Stack = true
+	java.runtime.name = OpenJDK Runtime Environment
+	java.runtime.version = 14.0.1+7
+	java.specification.name = Java Platform API Specification
+	java.specification.vendor = Oracle Corporation
+	java.specification.version = 14
+	java.util.logging.manager = org.jboss.logmanager.LogManager
+	java.vendor = Oracle Corporation
+	java.vendor.url = https://java.oracle.com/
+	java.vendor.url.bug = https://bugreport.java.com/bugreport/
+	java.version = 14.0.1
+	java.version.date = 2020-04-14
+	java.vm.compressedOopsMode = Zero based
+	java.vm.info = mixed mode, sharing
+	java.vm.name = OpenJDK 64-Bit Server VM
+	java.vm.specification.name = Java Virtual Machine Specification
+	java.vm.specification.vendor = Oracle Corporation
+	java.vm.specification.version = 14
+	java.vm.vendor = Oracle Corporation
+	java.vm.version = 14.0.1+7
+	javax.management.builder.initial = org.jboss.as.jmx.PluggableMBeanServerBuilder
+	jboss.home.dir = /Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta
+	jboss.host.name = daniels-macbook-pro
+	jboss.modules.dir = /Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/modules
+	jboss.modules.system.pkgs = org.jboss.byteman
+	jboss.node.name = daniels-macbook-pro
+	jboss.qualified.host.name = daniels-macbook-pro
+	jboss.server.base.dir = /Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/standalone
+	jboss.server.config.dir = /Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/standalone/configuration
+	jboss.server.data.dir = /Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/standalone/data
+	jboss.server.deploy.dir = /Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/standalone/data/content
+	jboss.server.log.dir = /Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/standalone/log
+	jboss.server.name = daniels-macbook-pro
+	jboss.server.persist.config = true
+	jboss.server.temp.dir = /Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/standalone/tmp
+	jdk.debug = release
+	line.separator = 
+
+	logging.configuration = file:/Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/standalone/configuration/logging.properties
+	module.path = /Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/modules
+	org.jboss.boot.log.file = /Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/standalone/log/server.log
+	org.jboss.resolver.warning = true
+	os.arch = x86_64
+	os.name = Mac OS X
+	os.version = 10.16
+	path.separator = :
+	socksNonProxyHosts = local|*.local|169.254/16|*.169.254/16|lx.astxsvc.com|*.lx.astxsvc.com|localhost|*.localhost|127.0.0.1:21300|*.127.0.0.1:21300
+	sun.arch.data.model = 64
+	sun.boot.library.path = /Library/Java/JavaVirtualMachines/openjdk-14.0.1.jdk/Contents/Home/lib
+	sun.cpu.endian = little
+	sun.io.unicode.encoding = UnicodeBig
+	sun.java.command = /Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/jboss-modules.jar -mp /Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/modules org.jboss.as.standalone -Djboss.home.dir=/Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta -Djboss.server.base.dir=/Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/standalone --git-repo=git@github.com:danieloh30/eap-gitssh-demo.git --git-branch=main --git-auth=file:///Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/wildfly-config.xml
+	sun.java.launcher = SUN_STANDARD
+	sun.jnu.encoding = UTF-8
+	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+	user.country = US
+	user.dir = /Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta
+	user.home = /Users/danieloh
+	user.language = en
+	user.name = danieloh
+	user.timezone = America/New_York
+2021-03-09 21:26:38,586 DEBUG [org.jboss.as.config] (MSC service thread 1-2) VM Arguments: -D[Standalone] -Xlog:gc*:file=/Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/standalone/log/gc.log:time,uptimemillis:filecount=5,filesize=3M -Xms1303m -Xmx1303m -XX:MetaspaceSize=96M -XX:MaxMetaspaceSize=256m -Djava.net.preferIPv4Stack=true -Djboss.modules.system.pkgs=org.jboss.byteman -Djava.awt.headless=true --add-exports=java.base/sun.nio.ch=ALL-UNNAMED --add-exports=jdk.unsupported/sun.misc=ALL-UNNAMED --add-exports=jdk.unsupported/sun.reflect=ALL-UNNAMED -Dorg.jboss.boot.log.file=/Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/standalone/log/server.log -Dlogging.configuration=file:/Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/standalone/configuration/logging.properties 
+2021-03-09 21:26:39,384 INFO  [org.jboss.as.controller.management-deprecated] (Controller Boot Thread) WFLYCTL0028: Attribute 'security-realm' in the resource at address '/core-service=management/management-interface=http-interface' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+2021-03-09 21:26:39,399 INFO  [org.jboss.as.controller.management-deprecated] (ServerService Thread Pool -- 20) WFLYCTL0028: Attribute 'security-realm' in the resource at address '/subsystem=undertow/server=default-server/https-listener=https' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+2021-03-09 21:26:39,452 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0039: Creating http management service using socket-binding (management-http)
+2021-03-09 21:26:39,465 INFO  [org.xnio] (MSC service thread 1-1) XNIO version 3.8.4.Final-redhat-00001
+2021-03-09 21:26:39,471 INFO  [org.xnio.nio] (MSC service thread 1-1) XNIO NIO Implementation Version 3.8.4.Final-redhat-00001
+2021-03-09 21:26:39,493 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 50) WFLYCLINF0001: Activating Infinispan subsystem.
+2021-03-09 21:26:39,498 INFO  [org.wildfly.extension.health] (ServerService Thread Pool -- 49) WFLYHEALTH0001: Activating Base Health Subsystem
+2021-03-09 21:26:39,500 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 68) WFLYTX0013: The node-identifier attribute on the /subsystem=transactions is set to the default value. This is a danger for environments running multiple servers. Please make sure the attribute value is unique.
+2021-03-09 21:26:39,503 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 51) WFLYIO001: Worker 'default' has auto-configured to 24 IO threads with 192 max task threads based on your 12 available processors
+2021-03-09 21:26:39,508 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 66) WFLYSEC0002: Activating Security Subsystem
+2021-03-09 21:26:39,510 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 60) WFLYNAM0001: Activating Naming Subsystem
+2021-03-09 21:26:39,512 INFO  [org.wildfly.extension.metrics] (ServerService Thread Pool -- 59) WFLYMETRICS0001: Activating Base Metrics Subsystem
+2021-03-09 21:26:39,514 INFO  [org.jboss.as.security] (MSC service thread 1-3) WFLYSEC0001: Current PicketBox version=5.0.3.Final-redhat-00007
+2021-03-09 21:26:39,515 INFO  [org.jboss.as.jaxrs] (ServerService Thread Pool -- 52) WFLYRS0016: RESTEasy version 3.14.0.Final-redhat-00001
+2021-03-09 21:26:39,518 INFO  [org.jboss.as.jsf] (ServerService Thread Pool -- 57) WFLYJSF0007: Activated the following JSF Implementations: [main]
+2021-03-09 21:26:39,519 INFO  [org.jboss.as.connector] (MSC service thread 1-8) WFLYJCA0009: Starting JCA Subsystem (WildFly/IronJacamar 1.4.25.Final-redhat-00001)
+2021-03-09 21:26:39,521 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 70) WFLYWS0002: Activating WebServices Extension
+2021-03-09 21:26:39,544 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 41) WFLYJCA0004: Deploying JDBC-compliant driver class org.h2.Driver (version 1.4)
+2021-03-09 21:26:39,547 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) WFLYUT0003: Undertow 2.2.3.SP1-redhat-00001 starting
+2021-03-09 21:26:39,550 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-4) WFLYJCA0018: Started Driver service with driver-name = h2
+2021-03-09 21:26:39,555 INFO  [org.jboss.remoting] (MSC service thread 1-5) JBoss Remoting version 5.0.20.Final-redhat-00001
+2021-03-09 21:26:39,560 INFO  [org.jboss.as.naming] (MSC service thread 1-4) WFLYNAM0003: Starting Naming Service
+2021-03-09 21:26:39,561 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-7) WFLYMAIL0001: Bound mail session [java:jboss/mail/Default]
+2021-03-09 21:26:39,593 WARN  [org.wildfly.extension.elytron] (MSC service thread 1-5) WFLYELY00023: KeyStore file '/Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/standalone/configuration/application.keystore' does not exist. Used blank.
+2021-03-09 21:26:39,604 WARN  [org.wildfly.extension.elytron] (MSC service thread 1-2) WFLYELY01084: KeyStore /Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/standalone/configuration/application.keystore not found, it will be auto generated on first use with a self-signed certificate for host localhost
+2021-03-09 21:26:39,626 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 69) WFLYUT0014: Creating file handler for path '/Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/welcome-content' with options [directory-listing: 'false', follow-symlink: 'false', case-sensitive: 'true', safe-symlink-paths: '[]']
+2021-03-09 21:26:39,634 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0012: Started server default-server.
+2021-03-09 21:26:39,636 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0018: Host default-host starting
+2021-03-09 21:26:39,652 INFO  [org.jboss.as.ejb3] (MSC service thread 1-4) WFLYEJB0481: Strict pool slsb-strict-max-pool is using a max instance size of 192 (per class), which is derived from thread worker pool sizing.
+2021-03-09 21:26:39,653 INFO  [org.jboss.as.ejb3] (MSC service thread 1-6) WFLYEJB0482: Strict pool mdb-strict-max-pool is using a max instance size of 48 (per class), which is derived from the number of CPUs on this host.
+2021-03-09 21:26:39,713 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0006: Undertow HTTP listener default listening on 127.0.0.1:8080
+2021-03-09 21:26:39,767 INFO  [org.jboss.as.ejb3] (MSC service thread 1-3) WFLYEJB0493: EJB subsystem suspension complete
+2021-03-09 21:26:39,814 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-6) WFLYJCA0001: Bound data source [java:jboss/datasources/ExampleDS]
+2021-03-09 21:26:39,835 INFO  [org.jboss.as.patching] (MSC service thread 1-3) WFLYPAT0050: JBoss EAP cumulative patch ID is: base, one-off patches include: none
+2021-03-09 21:26:39,847 WARN  [org.jboss.as.domain.management.security] (MSC service thread 1-8) WFLYDM0111: Keystore /Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/standalone/configuration/application.keystore not found, it will be auto generated on first use with a self signed certificate for host localhost
+2021-03-09 21:26:39,852 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-6) WFLYDS0013: Started FileSystemDeploymentService for directory /Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/standalone/deployments
+2021-03-09 21:26:39,875 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) WFLYUT0006: Undertow HTTPS listener https listening on 127.0.0.1:8443
+2021-03-09 21:26:39,986 INFO  [org.jboss.ws.common.management] (MSC service thread 1-8) JBWS022052: Starting JBossWS 5.4.2.Final-redhat-00001 (Apache CXF 3.3.7.redhat-00001) 
+2021-03-09 21:26:40,055 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0212: Resuming server
+2021-03-09 21:26:40,057 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0025: JBoss EAP 7.4.0.Beta (WildFly Core 14.0.1.Final-redhat-00001) started in 3880ms - Started 316 of 555 services (344 services are lazy, passive or on-demand)
+2021-03-09 21:26:40,058 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0060: Http management interface listening on http://127.0.0.1:9990/management
+2021-03-09 21:26:40,058 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0051: Admin console listening on http://127.0.0.1:9990
+2021-03-09 21:27:29,640 INFO  [org.jboss.as.server] (Thread-6) WFLYSRV0272: Suspending server
+2021-03-09 21:27:29,642 INFO  [org.jboss.as.ejb3] (Thread-6) WFLYEJB0493: EJB subsystem suspension complete
+2021-03-09 21:27:29,643 INFO  [org.jboss.as.server] (Thread-6) WFLYSRV0220: Server shutdown has been requested via an OS signal
+2021-03-09 21:27:29,651 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-7) WFLYJCA0010: Unbound data source [java:jboss/datasources/ExampleDS]
+2021-03-09 21:27:29,651 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0019: Host default-host stopping
+2021-03-09 21:27:29,651 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-1) WFLYMAIL0002: Unbound mail session [java:jboss/mail/Default]
+2021-03-09 21:27:29,652 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0008: Undertow HTTPS listener https suspending
+2021-03-09 21:27:29,653 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) WFLYUT0008: Undertow HTTP listener default suspending
+2021-03-09 21:27:29,653 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0007: Undertow HTTPS listener https stopped, was bound to 127.0.0.1:8443
+2021-03-09 21:27:29,653 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) WFLYUT0007: Undertow HTTP listener default stopped, was bound to 127.0.0.1:8080
+2021-03-09 21:27:29,654 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-7) WFLYJCA0019: Stopped Driver service with driver-name = h2
+2021-03-09 21:27:29,654 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) WFLYUT0004: Undertow 2.2.3.SP1-redhat-00001 stopping
+2021-03-09 21:27:29,661 INFO  [org.jboss.as] (MSC service thread 1-2) WFLYSRV0050: JBoss EAP 7.4.0.Beta (WildFly Core 14.0.1.Final-redhat-00001) stopped in 13ms
+2021-03-09 22:57:33,332 INFO  [org.jboss.modules] (main) JBoss Modules version 1.11.0.Final-redhat-00001
+2021-03-09 22:57:34,563 INFO  [org.wildfly.security] (main) ELY00001: WildFly Elytron version 1.14.1.Final-redhat-00001
+2021-03-09 22:57:35,007 INFO  [org.apache.sshd.common.io.DefaultIoServiceFactoryFactory] (main) No detected/configured IoServiceFactoryFactory using Nio2ServiceFactoryFactory
+2021-03-09 22:57:35,978 INFO  [org.jboss.as.server] (main) WFLYSRV0278: The configuration history is managed through Git
+2021-03-09 22:57:35,989 INFO  [org.jboss.msc] (main) JBoss MSC version 1.4.12.Final-redhat-00001
+2021-03-09 22:57:35,994 INFO  [org.jboss.threads] (main) JBoss Threads version 2.4.0.Final-redhat-00001
+2021-03-09 22:57:36,078 INFO  [org.jboss.as] (MSC service thread 1-2) WFLYSRV0049: JBoss EAP 7.4.0.Beta (WildFly Core 14.0.1.Final-redhat-00001) starting
+2021-03-09 22:57:36,079 DEBUG [org.jboss.as.config] (MSC service thread 1-2) Configured system properties:
+	[Standalone] = 
+	file.encoding = UTF-8
+	file.separator = /
+	ftp.nonProxyHosts = local|*.local|169.254/16|*.169.254/16|lx.astxsvc.com|*.lx.astxsvc.com|localhost|*.localhost|127.0.0.1:21300|*.127.0.0.1:21300
+	http.nonProxyHosts = local|*.local|169.254/16|*.169.254/16|lx.astxsvc.com|*.lx.astxsvc.com|localhost|*.localhost|127.0.0.1:21300|*.127.0.0.1:21300
+	java.awt.headless = true
+	java.class.path = /Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/jboss-modules.jar
+	java.class.version = 58.0
+	java.home = /Library/Java/JavaVirtualMachines/openjdk-14.0.1.jdk/Contents/Home
+	java.io.tmpdir = /var/folders/3g/g5jgkj0553s5dkwc3zw_p7_m0000gn/T/
+	java.library.path = /Users/danieloh/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+	java.net.preferIPv4Stack = true
+	java.runtime.name = OpenJDK Runtime Environment
+	java.runtime.version = 14.0.1+7
+	java.specification.name = Java Platform API Specification
+	java.specification.vendor = Oracle Corporation
+	java.specification.version = 14
+	java.util.logging.manager = org.jboss.logmanager.LogManager
+	java.vendor = Oracle Corporation
+	java.vendor.url = https://java.oracle.com/
+	java.vendor.url.bug = https://bugreport.java.com/bugreport/
+	java.version = 14.0.1
+	java.version.date = 2020-04-14
+	java.vm.compressedOopsMode = Zero based
+	java.vm.info = mixed mode, sharing
+	java.vm.name = OpenJDK 64-Bit Server VM
+	java.vm.specification.name = Java Virtual Machine Specification
+	java.vm.specification.vendor = Oracle Corporation
+	java.vm.specification.version = 14
+	java.vm.vendor = Oracle Corporation
+	java.vm.version = 14.0.1+7
+	javax.management.builder.initial = org.jboss.as.jmx.PluggableMBeanServerBuilder
+	jboss.home.dir = /Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta
+	jboss.host.name = daniels-macbook-pro
+	jboss.modules.dir = /Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/modules
+	jboss.modules.system.pkgs = org.jboss.byteman
+	jboss.node.name = daniels-macbook-pro
+	jboss.qualified.host.name = daniels-macbook-pro
+	jboss.server.base.dir = /Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/standalone
+	jboss.server.config.dir = /Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/standalone/configuration
+	jboss.server.data.dir = /Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/standalone/data
+	jboss.server.deploy.dir = /Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/standalone/data/content
+	jboss.server.log.dir = /Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/standalone/log
+	jboss.server.name = daniels-macbook-pro
+	jboss.server.persist.config = true
+	jboss.server.temp.dir = /Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/standalone/tmp
+	jdk.debug = release
+	line.separator = 
+
+	logging.configuration = file:/Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/standalone/configuration/logging.properties
+	module.path = /Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/modules
+	org.jboss.boot.log.file = /Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/standalone/log/server.log
+	org.jboss.resolver.warning = true
+	os.arch = x86_64
+	os.name = Mac OS X
+	os.version = 10.16
+	path.separator = :
+	socksNonProxyHosts = local|*.local|169.254/16|*.169.254/16|lx.astxsvc.com|*.lx.astxsvc.com|localhost|*.localhost|127.0.0.1:21300|*.127.0.0.1:21300
+	sun.arch.data.model = 64
+	sun.boot.library.path = /Library/Java/JavaVirtualMachines/openjdk-14.0.1.jdk/Contents/Home/lib
+	sun.cpu.endian = little
+	sun.io.unicode.encoding = UnicodeBig
+	sun.java.command = /Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/jboss-modules.jar -mp /Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/modules org.jboss.as.standalone -Djboss.home.dir=/Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta -Djboss.server.base.dir=/Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/standalone --git-repo=git@github.com:danieloh30/eap-gitssh-demo.git --git-branch=main --git-auth=https://raw.githubusercontent.com/danieloh30/eap-gitssh-demo/main/wildfly-config2.xml
+	sun.java.launcher = SUN_STANDARD
+	sun.jnu.encoding = UTF-8
+	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+	user.country = US
+	user.dir = /Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta
+	user.home = /Users/danieloh
+	user.language = en
+	user.name = danieloh
+	user.timezone = America/New_York
+2021-03-09 22:57:36,082 DEBUG [org.jboss.as.config] (MSC service thread 1-2) VM Arguments: -D[Standalone] -Xlog:gc*:file=/Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/standalone/log/gc.log:time,uptimemillis:filecount=5,filesize=3M -Xms1303m -Xmx1303m -XX:MetaspaceSize=96M -XX:MaxMetaspaceSize=256m -Djava.net.preferIPv4Stack=true -Djboss.modules.system.pkgs=org.jboss.byteman -Djava.awt.headless=true --add-exports=java.base/sun.nio.ch=ALL-UNNAMED --add-exports=jdk.unsupported/sun.misc=ALL-UNNAMED --add-exports=jdk.unsupported/sun.reflect=ALL-UNNAMED -Dorg.jboss.boot.log.file=/Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/standalone/log/server.log -Dlogging.configuration=file:/Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/standalone/configuration/logging.properties 
+2021-03-09 22:57:37,030 INFO  [org.jboss.as.controller.management-deprecated] (Controller Boot Thread) WFLYCTL0028: Attribute 'security-realm' in the resource at address '/core-service=management/management-interface=http-interface' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+2021-03-09 22:57:37,050 INFO  [org.jboss.as.controller.management-deprecated] (ServerService Thread Pool -- 18) WFLYCTL0028: Attribute 'security-realm' in the resource at address '/subsystem=undertow/server=default-server/https-listener=https' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+2021-03-09 22:57:37,100 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0039: Creating http management service using socket-binding (management-http)
+2021-03-09 22:57:37,113 INFO  [org.xnio] (MSC service thread 1-8) XNIO version 3.8.4.Final-redhat-00001
+2021-03-09 22:57:37,120 INFO  [org.xnio.nio] (MSC service thread 1-8) XNIO NIO Implementation Version 3.8.4.Final-redhat-00001
+2021-03-09 22:57:37,141 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 50) WFLYCLINF0001: Activating Infinispan subsystem.
+2021-03-09 22:57:37,145 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 68) WFLYTX0013: The node-identifier attribute on the /subsystem=transactions is set to the default value. This is a danger for environments running multiple servers. Please make sure the attribute value is unique.
+2021-03-09 22:57:37,151 INFO  [org.wildfly.extension.health] (ServerService Thread Pool -- 49) WFLYHEALTH0001: Activating Base Health Subsystem
+2021-03-09 22:57:37,153 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 66) WFLYSEC0002: Activating Security Subsystem
+2021-03-09 22:57:37,153 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 60) WFLYNAM0001: Activating Naming Subsystem
+2021-03-09 22:57:37,154 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 51) WFLYIO001: Worker 'default' has auto-configured to 24 IO threads with 192 max task threads based on your 12 available processors
+2021-03-09 22:57:37,159 INFO  [org.wildfly.extension.metrics] (ServerService Thread Pool -- 59) WFLYMETRICS0001: Activating Base Metrics Subsystem
+2021-03-09 22:57:37,160 INFO  [org.jboss.as.jaxrs] (ServerService Thread Pool -- 52) WFLYRS0016: RESTEasy version 3.14.0.Final-redhat-00001
+2021-03-09 22:57:37,163 INFO  [org.jboss.as.security] (MSC service thread 1-3) WFLYSEC0001: Current PicketBox version=5.0.3.Final-redhat-00007
+2021-03-09 22:57:37,163 INFO  [org.jboss.as.jsf] (ServerService Thread Pool -- 57) WFLYJSF0007: Activated the following JSF Implementations: [main]
+2021-03-09 22:57:37,169 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 70) WFLYWS0002: Activating WebServices Extension
+2021-03-09 22:57:37,179 INFO  [org.jboss.as.connector] (MSC service thread 1-5) WFLYJCA0009: Starting JCA Subsystem (WildFly/IronJacamar 1.4.25.Final-redhat-00001)
+2021-03-09 22:57:37,192 INFO  [org.jboss.remoting] (MSC service thread 1-4) JBoss Remoting version 5.0.20.Final-redhat-00001
+2021-03-09 22:57:37,192 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0003: Undertow 2.2.3.SP1-redhat-00001 starting
+2021-03-09 22:57:37,208 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-1) WFLYMAIL0001: Bound mail session [java:jboss/mail/Default]
+2021-03-09 22:57:37,207 INFO  [org.jboss.as.naming] (MSC service thread 1-5) WFLYNAM0003: Starting Naming Service
+2021-03-09 22:57:37,221 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 41) WFLYJCA0004: Deploying JDBC-compliant driver class org.h2.Driver (version 1.4)
+2021-03-09 22:57:37,233 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-1) WFLYJCA0018: Started Driver service with driver-name = h2
+2021-03-09 22:57:37,249 WARN  [org.wildfly.extension.elytron] (MSC service thread 1-5) WFLYELY00023: KeyStore file '/Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/standalone/configuration/application.keystore' does not exist. Used blank.
+2021-03-09 22:57:37,261 WARN  [org.wildfly.extension.elytron] (MSC service thread 1-6) WFLYELY01084: KeyStore /Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/standalone/configuration/application.keystore not found, it will be auto generated on first use with a self-signed certificate for host localhost
+2021-03-09 22:57:37,288 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 69) WFLYUT0014: Creating file handler for path '/Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/welcome-content' with options [directory-listing: 'false', follow-symlink: 'false', case-sensitive: 'true', safe-symlink-paths: '[]']
+2021-03-09 22:57:37,298 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) WFLYUT0012: Started server default-server.
+2021-03-09 22:57:37,300 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) WFLYUT0018: Host default-host starting
+2021-03-09 22:57:37,307 INFO  [org.jboss.as.ejb3] (MSC service thread 1-1) WFLYEJB0482: Strict pool mdb-strict-max-pool is using a max instance size of 48 (per class), which is derived from the number of CPUs on this host.
+2021-03-09 22:57:37,307 INFO  [org.jboss.as.ejb3] (MSC service thread 1-2) WFLYEJB0481: Strict pool slsb-strict-max-pool is using a max instance size of 192 (per class), which is derived from thread worker pool sizing.
+2021-03-09 22:57:37,360 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) WFLYUT0006: Undertow HTTP listener default listening on 127.0.0.1:8080
+2021-03-09 22:57:37,403 INFO  [org.jboss.as.ejb3] (MSC service thread 1-5) WFLYEJB0493: EJB subsystem suspension complete
+2021-03-09 22:57:37,447 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-4) WFLYJCA0001: Bound data source [java:jboss/datasources/ExampleDS]
+2021-03-09 22:57:37,477 INFO  [org.jboss.as.patching] (MSC service thread 1-4) WFLYPAT0050: JBoss EAP cumulative patch ID is: base, one-off patches include: none
+2021-03-09 22:57:37,488 WARN  [org.jboss.as.domain.management.security] (MSC service thread 1-6) WFLYDM0111: Keystore /Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/standalone/configuration/application.keystore not found, it will be auto generated on first use with a self signed certificate for host localhost
+2021-03-09 22:57:37,491 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-5) WFLYDS0013: Started FileSystemDeploymentService for directory /Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/standalone/deployments
+2021-03-09 22:57:37,514 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0006: Undertow HTTPS listener https listening on 127.0.0.1:8443
+2021-03-09 22:57:37,591 INFO  [org.jboss.ws.common.management] (MSC service thread 1-6) JBWS022052: Starting JBossWS 5.4.2.Final-redhat-00001 (Apache CXF 3.3.7.redhat-00001) 
+2021-03-09 22:57:37,672 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0212: Resuming server
+2021-03-09 22:57:37,673 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0025: JBoss EAP 7.4.0.Beta (WildFly Core 14.0.1.Final-redhat-00001) started in 4664ms - Started 316 of 555 services (344 services are lazy, passive or on-demand)
+2021-03-09 22:57:37,675 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0060: Http management interface listening on http://127.0.0.1:9990/management
+2021-03-09 22:57:37,675 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0051: Admin console listening on http://127.0.0.1:9990
+2021-03-09 22:58:04,894 INFO  [org.jboss.as.server] (Thread-6) WFLYSRV0272: Suspending server
+2021-03-09 22:58:04,896 INFO  [org.jboss.as.ejb3] (Thread-6) WFLYEJB0493: EJB subsystem suspension complete
+2021-03-09 22:58:04,898 INFO  [org.jboss.as.server] (Thread-6) WFLYSRV0220: Server shutdown has been requested via an OS signal
+2021-03-09 22:58:04,908 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-6) WFLYJCA0010: Unbound data source [java:jboss/datasources/ExampleDS]
+2021-03-09 22:58:04,908 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0019: Host default-host stopping
+2021-03-09 22:58:04,908 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-5) WFLYMAIL0002: Unbound mail session [java:jboss/mail/Default]
+2021-03-09 22:58:04,909 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0008: Undertow HTTPS listener https suspending
+2021-03-09 22:58:04,909 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0008: Undertow HTTP listener default suspending
+2021-03-09 22:58:04,911 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-7) WFLYJCA0019: Stopped Driver service with driver-name = h2
+2021-03-09 22:58:04,914 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0007: Undertow HTTP listener default stopped, was bound to 127.0.0.1:8080
+2021-03-09 22:58:04,914 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0007: Undertow HTTPS listener https stopped, was bound to 127.0.0.1:8443
+2021-03-09 22:58:04,915 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0004: Undertow 2.2.3.SP1-redhat-00001 stopping
+2021-03-09 22:58:04,920 INFO  [org.jboss.as] (MSC service thread 1-4) WFLYSRV0050: JBoss EAP 7.4.0.Beta (WildFly Core 14.0.1.Final-redhat-00001) stopped in 18ms
+2021-03-09 23:19:17,005 INFO  [org.jboss.modules] (main) JBoss Modules version 1.11.0.Final-redhat-00001
+2021-03-09 23:19:17,735 INFO  [org.wildfly.security] (main) ELY00001: WildFly Elytron version 1.14.1.Final-redhat-00001
+2021-03-09 23:19:18,266 INFO  [org.apache.sshd.common.io.DefaultIoServiceFactoryFactory] (main) No detected/configured IoServiceFactoryFactory using Nio2ServiceFactoryFactory
+2021-03-09 23:19:19,256 INFO  [org.jboss.as.server] (main) WFLYSRV0278: The configuration history is managed through Git
+2021-03-09 23:19:19,267 INFO  [org.jboss.msc] (main) JBoss MSC version 1.4.12.Final-redhat-00001
+2021-03-09 23:19:19,272 INFO  [org.jboss.threads] (main) JBoss Threads version 2.4.0.Final-redhat-00001
+2021-03-09 23:19:19,347 INFO  [org.jboss.as] (MSC service thread 1-2) WFLYSRV0049: JBoss EAP 7.4.0.Beta (WildFly Core 14.0.1.Final-redhat-00001) starting
+2021-03-09 23:19:19,348 DEBUG [org.jboss.as.config] (MSC service thread 1-2) Configured system properties:
+	[Standalone] = 
+	file.encoding = UTF-8
+	file.separator = /
+	ftp.nonProxyHosts = local|*.local|169.254/16|*.169.254/16|lx.astxsvc.com|*.lx.astxsvc.com|localhost|*.localhost|127.0.0.1:21300|*.127.0.0.1:21300
+	http.nonProxyHosts = local|*.local|169.254/16|*.169.254/16|lx.astxsvc.com|*.lx.astxsvc.com|localhost|*.localhost|127.0.0.1:21300|*.127.0.0.1:21300
+	java.awt.headless = true
+	java.class.path = /Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/jboss-modules.jar
+	java.class.version = 58.0
+	java.home = /Library/Java/JavaVirtualMachines/openjdk-14.0.1.jdk/Contents/Home
+	java.io.tmpdir = /var/folders/3g/g5jgkj0553s5dkwc3zw_p7_m0000gn/T/
+	java.library.path = /Users/danieloh/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+	java.net.preferIPv4Stack = true
+	java.runtime.name = OpenJDK Runtime Environment
+	java.runtime.version = 14.0.1+7
+	java.specification.name = Java Platform API Specification
+	java.specification.vendor = Oracle Corporation
+	java.specification.version = 14
+	java.util.logging.manager = org.jboss.logmanager.LogManager
+	java.vendor = Oracle Corporation
+	java.vendor.url = https://java.oracle.com/
+	java.vendor.url.bug = https://bugreport.java.com/bugreport/
+	java.version = 14.0.1
+	java.version.date = 2020-04-14
+	java.vm.compressedOopsMode = Zero based
+	java.vm.info = mixed mode, sharing
+	java.vm.name = OpenJDK 64-Bit Server VM
+	java.vm.specification.name = Java Virtual Machine Specification
+	java.vm.specification.vendor = Oracle Corporation
+	java.vm.specification.version = 14
+	java.vm.vendor = Oracle Corporation
+	java.vm.version = 14.0.1+7
+	javax.management.builder.initial = org.jboss.as.jmx.PluggableMBeanServerBuilder
+	jboss.home.dir = /Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta
+	jboss.host.name = daniels-macbook-pro
+	jboss.modules.dir = /Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/modules
+	jboss.modules.system.pkgs = org.jboss.byteman
+	jboss.node.name = daniels-macbook-pro
+	jboss.qualified.host.name = daniels-macbook-pro
+	jboss.server.base.dir = /Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/standalone
+	jboss.server.config.dir = /Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/standalone/configuration
+	jboss.server.data.dir = /Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/standalone/data
+	jboss.server.deploy.dir = /Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/standalone/data/content
+	jboss.server.log.dir = /Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/standalone/log
+	jboss.server.name = daniels-macbook-pro
+	jboss.server.persist.config = true
+	jboss.server.temp.dir = /Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/standalone/tmp
+	jdk.debug = release
+	line.separator = 
+
+	logging.configuration = file:/Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/standalone/configuration/logging.properties
+	module.path = /Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/modules
+	org.jboss.boot.log.file = /Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/standalone/log/server.log
+	org.jboss.resolver.warning = true
+	os.arch = x86_64
+	os.name = Mac OS X
+	os.version = 10.16
+	path.separator = :
+	socksNonProxyHosts = local|*.local|169.254/16|*.169.254/16|lx.astxsvc.com|*.lx.astxsvc.com|localhost|*.localhost|127.0.0.1:21300|*.127.0.0.1:21300
+	sun.arch.data.model = 64
+	sun.boot.library.path = /Library/Java/JavaVirtualMachines/openjdk-14.0.1.jdk/Contents/Home/lib
+	sun.cpu.endian = little
+	sun.io.unicode.encoding = UnicodeBig
+	sun.java.command = /Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/jboss-modules.jar -mp /Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/modules org.jboss.as.standalone -Djboss.home.dir=/Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta -Djboss.server.base.dir=/Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/standalone --git-repo=git@github.com:danieloh30/eap-gitssh-demo.git --git-branch=main --git-auth=file:///Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/wildfly-config.xml
+	sun.java.launcher = SUN_STANDARD
+	sun.jnu.encoding = UTF-8
+	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+	user.country = US
+	user.dir = /Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta
+	user.home = /Users/danieloh
+	user.language = en
+	user.name = danieloh
+	user.timezone = America/New_York
+2021-03-09 23:19:19,350 DEBUG [org.jboss.as.config] (MSC service thread 1-2) VM Arguments: -D[Standalone] -Xlog:gc*:file=/Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/standalone/log/gc.log:time,uptimemillis:filecount=5,filesize=3M -Xms1303m -Xmx1303m -XX:MetaspaceSize=96M -XX:MaxMetaspaceSize=256m -Djava.net.preferIPv4Stack=true -Djboss.modules.system.pkgs=org.jboss.byteman -Djava.awt.headless=true --add-exports=java.base/sun.nio.ch=ALL-UNNAMED --add-exports=jdk.unsupported/sun.misc=ALL-UNNAMED --add-exports=jdk.unsupported/sun.reflect=ALL-UNNAMED -Dorg.jboss.boot.log.file=/Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/standalone/log/server.log -Dlogging.configuration=file:/Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/standalone/configuration/logging.properties 
+2021-03-09 23:19:20,464 INFO  [org.jboss.as.controller.management-deprecated] (Controller Boot Thread) WFLYCTL0028: Attribute 'security-realm' in the resource at address '/core-service=management/management-interface=http-interface' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+2021-03-09 23:19:20,476 INFO  [org.jboss.as.controller.management-deprecated] (ServerService Thread Pool -- 28) WFLYCTL0028: Attribute 'security-realm' in the resource at address '/subsystem=undertow/server=default-server/https-listener=https' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+2021-03-09 23:19:20,531 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0039: Creating http management service using socket-binding (management-http)
+2021-03-09 23:19:20,546 INFO  [org.xnio] (MSC service thread 1-5) XNIO version 3.8.4.Final-redhat-00001
+2021-03-09 23:19:20,553 INFO  [org.xnio.nio] (MSC service thread 1-5) XNIO NIO Implementation Version 3.8.4.Final-redhat-00001
+2021-03-09 23:19:20,573 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 50) WFLYCLINF0001: Activating Infinispan subsystem.
+2021-03-09 23:19:20,579 INFO  [org.wildfly.extension.health] (ServerService Thread Pool -- 49) WFLYHEALTH0001: Activating Base Health Subsystem
+2021-03-09 23:19:20,584 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 68) WFLYTX0013: The node-identifier attribute on the /subsystem=transactions is set to the default value. This is a danger for environments running multiple servers. Please make sure the attribute value is unique.
+2021-03-09 23:19:20,588 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 51) WFLYIO001: Worker 'default' has auto-configured to 24 IO threads with 192 max task threads based on your 12 available processors
+2021-03-09 23:19:20,590 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 60) WFLYNAM0001: Activating Naming Subsystem
+2021-03-09 23:19:20,590 INFO  [org.jboss.as.jaxrs] (ServerService Thread Pool -- 52) WFLYRS0016: RESTEasy version 3.14.0.Final-redhat-00001
+2021-03-09 23:19:20,594 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 66) WFLYSEC0002: Activating Security Subsystem
+2021-03-09 23:19:20,594 INFO  [org.jboss.as.jsf] (ServerService Thread Pool -- 57) WFLYJSF0007: Activated the following JSF Implementations: [main]
+2021-03-09 23:19:20,602 INFO  [org.wildfly.extension.metrics] (ServerService Thread Pool -- 59) WFLYMETRICS0001: Activating Base Metrics Subsystem
+2021-03-09 23:19:20,604 INFO  [org.jboss.as.security] (MSC service thread 1-1) WFLYSEC0001: Current PicketBox version=5.0.3.Final-redhat-00007
+2021-03-09 23:19:20,604 INFO  [org.jboss.as.connector] (MSC service thread 1-4) WFLYJCA0009: Starting JCA Subsystem (WildFly/IronJacamar 1.4.25.Final-redhat-00001)
+2021-03-09 23:19:20,607 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 70) WFLYWS0002: Activating WebServices Extension
+2021-03-09 23:19:20,626 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0003: Undertow 2.2.3.SP1-redhat-00001 starting
+2021-03-09 23:19:20,635 INFO  [org.jboss.remoting] (MSC service thread 1-5) JBoss Remoting version 5.0.20.Final-redhat-00001
+2021-03-09 23:19:20,636 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 41) WFLYJCA0004: Deploying JDBC-compliant driver class org.h2.Driver (version 1.4)
+2021-03-09 23:19:20,644 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-8) WFLYJCA0018: Started Driver service with driver-name = h2
+2021-03-09 23:19:20,645 INFO  [org.jboss.as.naming] (MSC service thread 1-4) WFLYNAM0003: Starting Naming Service
+2021-03-09 23:19:20,646 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-8) WFLYMAIL0001: Bound mail session [java:jboss/mail/Default]
+2021-03-09 23:19:20,678 WARN  [org.wildfly.extension.elytron] (MSC service thread 1-5) WFLYELY00023: KeyStore file '/Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/standalone/configuration/application.keystore' does not exist. Used blank.
+2021-03-09 23:19:20,689 WARN  [org.wildfly.extension.elytron] (MSC service thread 1-8) WFLYELY01084: KeyStore /Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/standalone/configuration/application.keystore not found, it will be auto generated on first use with a self-signed certificate for host localhost
+2021-03-09 23:19:20,706 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 69) WFLYUT0014: Creating file handler for path '/Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/welcome-content' with options [directory-listing: 'false', follow-symlink: 'false', case-sensitive: 'true', safe-symlink-paths: '[]']
+2021-03-09 23:19:20,714 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0012: Started server default-server.
+2021-03-09 23:19:20,717 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0018: Host default-host starting
+2021-03-09 23:19:20,721 INFO  [org.jboss.as.ejb3] (MSC service thread 1-5) WFLYEJB0481: Strict pool slsb-strict-max-pool is using a max instance size of 192 (per class), which is derived from thread worker pool sizing.
+2021-03-09 23:19:20,721 INFO  [org.jboss.as.ejb3] (MSC service thread 1-7) WFLYEJB0482: Strict pool mdb-strict-max-pool is using a max instance size of 48 (per class), which is derived from the number of CPUs on this host.
+2021-03-09 23:19:20,779 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) WFLYUT0006: Undertow HTTP listener default listening on 127.0.0.1:8080
+2021-03-09 23:19:20,813 INFO  [org.jboss.as.ejb3] (MSC service thread 1-7) WFLYEJB0493: EJB subsystem suspension complete
+2021-03-09 23:19:20,855 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-4) WFLYJCA0001: Bound data source [java:jboss/datasources/ExampleDS]
+2021-03-09 23:19:20,867 INFO  [org.jboss.as.patching] (MSC service thread 1-1) WFLYPAT0050: JBoss EAP cumulative patch ID is: base, one-off patches include: none
+2021-03-09 23:19:20,879 WARN  [org.jboss.as.domain.management.security] (MSC service thread 1-2) WFLYDM0111: Keystore /Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/standalone/configuration/application.keystore not found, it will be auto generated on first use with a self signed certificate for host localhost
+2021-03-09 23:19:20,882 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-6) WFLYDS0013: Started FileSystemDeploymentService for directory /Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/standalone/deployments
+2021-03-09 23:19:20,905 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0006: Undertow HTTPS listener https listening on 127.0.0.1:8443
+2021-03-09 23:19:20,978 INFO  [org.jboss.ws.common.management] (MSC service thread 1-8) JBWS022052: Starting JBossWS 5.4.2.Final-redhat-00001 (Apache CXF 3.3.7.redhat-00001) 
+2021-03-09 23:19:21,066 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0212: Resuming server
+2021-03-09 23:19:21,068 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0025: JBoss EAP 7.4.0.Beta (WildFly Core 14.0.1.Final-redhat-00001) started in 4404ms - Started 316 of 555 services (344 services are lazy, passive or on-demand)
+2021-03-09 23:19:21,069 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0060: Http management interface listening on http://127.0.0.1:9990/management
+2021-03-09 23:19:21,069 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0051: Admin console listening on http://127.0.0.1:9990
+2021-03-09 23:30:30,555 INFO  [org.jboss.as.server] (Thread-6) WFLYSRV0272: Suspending server
+2021-03-09 23:30:30,625 INFO  [org.jboss.as.ejb3] (Thread-6) WFLYEJB0493: EJB subsystem suspension complete
+2021-03-09 23:30:30,656 INFO  [org.jboss.as.server] (Thread-6) WFLYSRV0220: Server shutdown has been requested via an OS signal
+2021-03-09 23:30:30,725 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-6) WFLYJCA0010: Unbound data source [java:jboss/datasources/ExampleDS]
+2021-03-09 23:30:30,727 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) WFLYUT0019: Host default-host stopping
+2021-03-09 23:30:30,728 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-8) WFLYMAIL0002: Unbound mail session [java:jboss/mail/Default]
+2021-03-09 23:30:30,737 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) WFLYUT0008: Undertow HTTP listener default suspending
+2021-03-09 23:30:30,737 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) WFLYUT0008: Undertow HTTPS listener https suspending
+2021-03-09 23:30:30,738 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) WFLYUT0007: Undertow HTTP listener default stopped, was bound to 127.0.0.1:8080
+2021-03-09 23:30:30,738 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) WFLYUT0007: Undertow HTTPS listener https stopped, was bound to 127.0.0.1:8443
+2021-03-09 23:30:30,741 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0004: Undertow 2.2.3.SP1-redhat-00001 stopping
+2021-03-09 23:30:30,742 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-8) WFLYJCA0019: Stopped Driver service with driver-name = h2
+2021-03-09 23:30:30,771 INFO  [org.jboss.as] (MSC service thread 1-3) WFLYSRV0050: JBoss EAP 7.4.0.Beta (WildFly Core 14.0.1.Final-redhat-00001) stopped in 85ms
+2021-03-09 23:30:33,989 INFO  [org.jboss.modules] (main) JBoss Modules version 1.11.0.Final-redhat-00001
+2021-03-09 23:30:34,657 INFO  [org.wildfly.security] (main) ELY00001: WildFly Elytron version 1.14.1.Final-redhat-00001
+2021-03-09 23:30:35,042 INFO  [org.apache.sshd.common.io.DefaultIoServiceFactoryFactory] (main) No detected/configured IoServiceFactoryFactory using Nio2ServiceFactoryFactory
+2021-03-09 23:30:35,841 INFO  [org.jboss.as.server] (main) WFLYSRV0278: The configuration history is managed through Git
+2021-03-09 23:30:35,852 INFO  [org.jboss.msc] (main) JBoss MSC version 1.4.12.Final-redhat-00001
+2021-03-09 23:30:35,857 INFO  [org.jboss.threads] (main) JBoss Threads version 2.4.0.Final-redhat-00001
+2021-03-09 23:30:35,929 INFO  [org.jboss.as] (MSC service thread 1-2) WFLYSRV0049: JBoss EAP 7.4.0.Beta (WildFly Core 14.0.1.Final-redhat-00001) starting
+2021-03-09 23:30:35,930 DEBUG [org.jboss.as.config] (MSC service thread 1-2) Configured system properties:
+	[Standalone] = 
+	file.encoding = UTF-8
+	file.separator = /
+	ftp.nonProxyHosts = local|*.local|169.254/16|*.169.254/16|lx.astxsvc.com|*.lx.astxsvc.com|localhost|*.localhost|127.0.0.1:21300|*.127.0.0.1:21300
+	http.nonProxyHosts = local|*.local|169.254/16|*.169.254/16|lx.astxsvc.com|*.lx.astxsvc.com|localhost|*.localhost|127.0.0.1:21300|*.127.0.0.1:21300
+	java.awt.headless = true
+	java.class.path = /Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/jboss-modules.jar
+	java.class.version = 58.0
+	java.home = /Library/Java/JavaVirtualMachines/openjdk-14.0.1.jdk/Contents/Home
+	java.io.tmpdir = /var/folders/3g/g5jgkj0553s5dkwc3zw_p7_m0000gn/T/
+	java.library.path = /Users/danieloh/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+	java.net.preferIPv4Stack = true
+	java.runtime.name = OpenJDK Runtime Environment
+	java.runtime.version = 14.0.1+7
+	java.specification.name = Java Platform API Specification
+	java.specification.vendor = Oracle Corporation
+	java.specification.version = 14
+	java.util.logging.manager = org.jboss.logmanager.LogManager
+	java.vendor = Oracle Corporation
+	java.vendor.url = https://java.oracle.com/
+	java.vendor.url.bug = https://bugreport.java.com/bugreport/
+	java.version = 14.0.1
+	java.version.date = 2020-04-14
+	java.vm.compressedOopsMode = Zero based
+	java.vm.info = mixed mode, sharing
+	java.vm.name = OpenJDK 64-Bit Server VM
+	java.vm.specification.name = Java Virtual Machine Specification
+	java.vm.specification.vendor = Oracle Corporation
+	java.vm.specification.version = 14
+	java.vm.vendor = Oracle Corporation
+	java.vm.version = 14.0.1+7
+	javax.management.builder.initial = org.jboss.as.jmx.PluggableMBeanServerBuilder
+	jboss.home.dir = /Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta
+	jboss.host.name = daniels-macbook-pro
+	jboss.modules.dir = /Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/modules
+	jboss.modules.system.pkgs = org.jboss.byteman
+	jboss.node.name = daniels-macbook-pro
+	jboss.qualified.host.name = daniels-macbook-pro
+	jboss.server.base.dir = /Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/standalone
+	jboss.server.config.dir = /Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/standalone/configuration
+	jboss.server.data.dir = /Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/standalone/data
+	jboss.server.deploy.dir = /Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/standalone/data/content
+	jboss.server.log.dir = /Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/standalone/log
+	jboss.server.name = daniels-macbook-pro
+	jboss.server.persist.config = true
+	jboss.server.temp.dir = /Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/standalone/tmp
+	jdk.debug = release
+	line.separator = 
+
+	logging.configuration = file:/Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/standalone/configuration/logging.properties
+	module.path = /Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/modules
+	org.jboss.boot.log.file = /Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/standalone/log/server.log
+	org.jboss.resolver.warning = true
+	os.arch = x86_64
+	os.name = Mac OS X
+	os.version = 10.16
+	path.separator = :
+	socksNonProxyHosts = local|*.local|169.254/16|*.169.254/16|lx.astxsvc.com|*.lx.astxsvc.com|localhost|*.localhost|127.0.0.1:21300|*.127.0.0.1:21300
+	sun.arch.data.model = 64
+	sun.boot.library.path = /Library/Java/JavaVirtualMachines/openjdk-14.0.1.jdk/Contents/Home/lib
+	sun.cpu.endian = little
+	sun.io.unicode.encoding = UnicodeBig
+	sun.java.command = /Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/jboss-modules.jar -mp /Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/modules org.jboss.as.standalone -Djboss.home.dir=/Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta -Djboss.server.base.dir=/Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/standalone --git-repo=git@github.com:danieloh30/eap-gitssh-demo.git --git-branch=main --git-auth=file:///Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/wildfly-config.xml
+	sun.java.launcher = SUN_STANDARD
+	sun.jnu.encoding = UTF-8
+	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+	user.country = US
+	user.dir = /Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta
+	user.home = /Users/danieloh
+	user.language = en
+	user.name = danieloh
+	user.timezone = America/New_York
+2021-03-09 23:30:35,932 DEBUG [org.jboss.as.config] (MSC service thread 1-2) VM Arguments: -D[Standalone] -Xlog:gc*:file=/Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/standalone/log/gc.log:time,uptimemillis:filecount=5,filesize=3M -Xms1303m -Xmx1303m -XX:MetaspaceSize=96M -XX:MaxMetaspaceSize=256m -Djava.net.preferIPv4Stack=true -Djboss.modules.system.pkgs=org.jboss.byteman -Djava.awt.headless=true --add-exports=java.base/sun.nio.ch=ALL-UNNAMED --add-exports=jdk.unsupported/sun.misc=ALL-UNNAMED --add-exports=jdk.unsupported/sun.reflect=ALL-UNNAMED -Dorg.jboss.boot.log.file=/Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/standalone/log/server.log -Dlogging.configuration=file:/Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/standalone/configuration/logging.properties 
+2021-03-09 23:30:36,776 INFO  [org.jboss.as.controller.management-deprecated] (Controller Boot Thread) WFLYCTL0028: Attribute 'security-realm' in the resource at address '/core-service=management/management-interface=http-interface' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+2021-03-09 23:30:36,797 INFO  [org.jboss.as.controller.management-deprecated] (ServerService Thread Pool -- 14) WFLYCTL0028: Attribute 'security-realm' in the resource at address '/subsystem=undertow/server=default-server/https-listener=https' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+2021-03-09 23:30:36,853 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0039: Creating http management service using socket-binding (management-http)
+2021-03-09 23:30:36,867 INFO  [org.xnio] (MSC service thread 1-5) XNIO version 3.8.4.Final-redhat-00001
+2021-03-09 23:30:36,874 INFO  [org.xnio.nio] (MSC service thread 1-5) XNIO NIO Implementation Version 3.8.4.Final-redhat-00001
+2021-03-09 23:30:36,894 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 50) WFLYCLINF0001: Activating Infinispan subsystem.
+2021-03-09 23:30:36,898 INFO  [org.wildfly.extension.health] (ServerService Thread Pool -- 49) WFLYHEALTH0001: Activating Base Health Subsystem
+2021-03-09 23:30:36,904 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 60) WFLYNAM0001: Activating Naming Subsystem
+2021-03-09 23:30:36,903 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 68) WFLYTX0013: The node-identifier attribute on the /subsystem=transactions is set to the default value. This is a danger for environments running multiple servers. Please make sure the attribute value is unique.
+2021-03-09 23:30:36,907 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 51) WFLYIO001: Worker 'default' has auto-configured to 24 IO threads with 192 max task threads based on your 12 available processors
+2021-03-09 23:30:36,909 INFO  [org.jboss.as.jaxrs] (ServerService Thread Pool -- 52) WFLYRS0016: RESTEasy version 3.14.0.Final-redhat-00001
+2021-03-09 23:30:36,916 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 66) WFLYSEC0002: Activating Security Subsystem
+2021-03-09 23:30:36,917 INFO  [org.wildfly.extension.metrics] (ServerService Thread Pool -- 59) WFLYMETRICS0001: Activating Base Metrics Subsystem
+2021-03-09 23:30:36,917 INFO  [org.jboss.as.jsf] (ServerService Thread Pool -- 57) WFLYJSF0007: Activated the following JSF Implementations: [main]
+2021-03-09 23:30:36,919 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 70) WFLYWS0002: Activating WebServices Extension
+2021-03-09 23:30:36,920 INFO  [org.jboss.as.connector] (MSC service thread 1-3) WFLYJCA0009: Starting JCA Subsystem (WildFly/IronJacamar 1.4.25.Final-redhat-00001)
+2021-03-09 23:30:36,923 INFO  [org.jboss.as.security] (MSC service thread 1-3) WFLYSEC0001: Current PicketBox version=5.0.3.Final-redhat-00007
+2021-03-09 23:30:36,944 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) WFLYUT0003: Undertow 2.2.3.SP1-redhat-00001 starting
+2021-03-09 23:30:36,938 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 41) WFLYJCA0004: Deploying JDBC-compliant driver class org.h2.Driver (version 1.4)
+2021-03-09 23:30:36,955 INFO  [org.jboss.as.naming] (MSC service thread 1-8) WFLYNAM0003: Starting Naming Service
+2021-03-09 23:30:36,955 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-7) WFLYJCA0018: Started Driver service with driver-name = h2
+2021-03-09 23:30:36,957 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-8) WFLYMAIL0001: Bound mail session [java:jboss/mail/Default]
+2021-03-09 23:30:36,969 INFO  [org.jboss.remoting] (MSC service thread 1-5) JBoss Remoting version 5.0.20.Final-redhat-00001
+2021-03-09 23:30:36,996 WARN  [org.wildfly.extension.elytron] (MSC service thread 1-2) WFLYELY00023: KeyStore file '/Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/standalone/configuration/application.keystore' does not exist. Used blank.
+2021-03-09 23:30:37,005 WARN  [org.wildfly.extension.elytron] (MSC service thread 1-8) WFLYELY01084: KeyStore /Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/standalone/configuration/application.keystore not found, it will be auto generated on first use with a self-signed certificate for host localhost
+2021-03-09 23:30:37,027 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 69) WFLYUT0014: Creating file handler for path '/Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/welcome-content' with options [directory-listing: 'false', follow-symlink: 'false', case-sensitive: 'true', safe-symlink-paths: '[]']
+2021-03-09 23:30:37,041 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0012: Started server default-server.
+2021-03-09 23:30:37,043 INFO  [org.jboss.as.ejb3] (MSC service thread 1-8) WFLYEJB0481: Strict pool slsb-strict-max-pool is using a max instance size of 192 (per class), which is derived from thread worker pool sizing.
+2021-03-09 23:30:37,043 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0018: Host default-host starting
+2021-03-09 23:30:37,043 INFO  [org.jboss.as.ejb3] (MSC service thread 1-4) WFLYEJB0482: Strict pool mdb-strict-max-pool is using a max instance size of 48 (per class), which is derived from the number of CPUs on this host.
+2021-03-09 23:30:37,099 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0006: Undertow HTTP listener default listening on 127.0.0.1:8080
+2021-03-09 23:30:37,131 INFO  [org.jboss.as.ejb3] (MSC service thread 1-3) WFLYEJB0493: EJB subsystem suspension complete
+2021-03-09 23:30:37,163 INFO  [org.jboss.as.patching] (MSC service thread 1-6) WFLYPAT0050: JBoss EAP cumulative patch ID is: base, one-off patches include: none
+2021-03-09 23:30:37,173 WARN  [org.jboss.as.domain.management.security] (MSC service thread 1-3) WFLYDM0111: Keystore /Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/standalone/configuration/application.keystore not found, it will be auto generated on first use with a self signed certificate for host localhost
+2021-03-09 23:30:37,177 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-5) WFLYDS0013: Started FileSystemDeploymentService for directory /Users/danieloh/cloud-native-app-dev/eap/jboss-eap-7.4.0-beta/jboss-eap-7.4.0.Beta/standalone/deployments
+2021-03-09 23:30:37,179 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-5) WFLYJCA0001: Bound data source [java:jboss/datasources/ExampleDS]
+2021-03-09 23:30:37,202 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0006: Undertow HTTPS listener https listening on 127.0.0.1:8443
+2021-03-09 23:30:37,273 INFO  [org.jboss.ws.common.management] (MSC service thread 1-3) JBWS022052: Starting JBossWS 5.4.2.Final-redhat-00001 (Apache CXF 3.3.7.redhat-00001) 
+2021-03-09 23:30:37,348 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0212: Resuming server
+2021-03-09 23:30:37,350 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0025: JBoss EAP 7.4.0.Beta (WildFly Core 14.0.1.Final-redhat-00001) started in 3682ms - Started 316 of 555 services (344 services are lazy, passive or on-demand)
+2021-03-09 23:30:37,352 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0060: Http management interface listening on http://127.0.0.1:9990/management
+2021-03-09 23:30:37,352 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0051: Admin console listening on http://127.0.0.1:9990
+2021-03-09 23:59:05,831 INFO  [org.jboss.as.server] (Thread-6) WFLYSRV0272: Suspending server
+2021-03-09 23:59:05,949 INFO  [org.jboss.as.ejb3] (Thread-6) WFLYEJB0493: EJB subsystem suspension complete
+2021-03-09 23:59:06,005 INFO  [org.jboss.as.server] (Thread-6) WFLYSRV0220: Server shutdown has been requested via an OS signal
+2021-03-09 23:59:06,131 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-3) WFLYJCA0010: Unbound data source [java:jboss/datasources/ExampleDS]
+2021-03-09 23:59:06,136 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-7) WFLYMAIL0002: Unbound mail session [java:jboss/mail/Default]
+2021-03-09 23:59:06,137 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0019: Host default-host stopping
+2021-03-09 23:59:06,142 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) WFLYUT0008: Undertow HTTP listener default suspending
+2021-03-09 23:59:06,142 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0008: Undertow HTTPS listener https suspending
+2021-03-09 23:59:06,143 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-2) WFLYJCA0019: Stopped Driver service with driver-name = h2
+2021-03-09 23:59:06,154 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0007: Undertow HTTPS listener https stopped, was bound to 127.0.0.1:8443
+2021-03-09 23:59:06,154 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) WFLYUT0007: Undertow HTTP listener default stopped, was bound to 127.0.0.1:8080
+2021-03-09 23:59:06,158 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) WFLYUT0004: Undertow 2.2.3.SP1-redhat-00001 stopping
+2021-03-09 23:59:06,174 INFO  [org.jboss.as] (MSC service thread 1-8) WFLYSRV0050: JBoss EAP 7.4.0.Beta (WildFly Core 14.0.1.Final-redhat-00001) stopped in 112ms

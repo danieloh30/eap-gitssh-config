@@ -1,0 +1,24 @@
+Manifest-Version: 1.0
+Created-By: Apache Maven 3.6.3
+Built-By: danieloh
+Build-Jdk: 14.0.1
+Specification-Title: Quickstart: kitchensink
+Specification-Version: 7.3
+Specification-Vendor: JBoss by Red Hat
+Implementation-Title: Quickstart: kitchensink
+Implementation-Version: 7.3.0.GA
+Implementation-Vendor-Id: org.jboss.eap.quickstarts
+Implementation-Vendor: JBoss by Red Hat
+Implementation-URL: https://developers.redhat.com/quickstarts/eap/kitche
+ nsink/
+Java-Vendor: Oracle Corporation
+Java-Version: 14.0.1
+Os-Arch: x86_64
+Os-Name: Mac OS X
+Os-Version: 10.16
+Scm-Connection: scm:git:git@github.com:jboss/jboss-parent-pom.git/quicks
+ tart-parent/kitchensink
+Scm-Revision: b95845c0d983f9998a3c8345cd0e8815f85e602b
+Scm-Url: http://github.com/jboss/jboss-parent-pom/quickstart-parent/kitc
+ hensink
+
